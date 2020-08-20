@@ -33,7 +33,7 @@ For CRUD functionality in Donation info screen/"Where your money goes" component
 BGC Screens:
 - Home (with image carousel)
 - About Us
-- Donation info (Full CRUD functionality will be implimented in "Where Your Money Goes" component)
+- Donation info (Full CRUD functionality will be implemented in "Where Your Money Goes" component)
 
 # PMVP
 
