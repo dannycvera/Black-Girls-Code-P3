@@ -18,7 +18,6 @@ For CRUD functionality in Donation info screen/"Where your money goes" component
 ```
 const Event = new Schema(
   {
-    
     imgURL: { type: String, required: true },
     title: { type: String, required: true },
     funds: { type: Integer, required: true },
