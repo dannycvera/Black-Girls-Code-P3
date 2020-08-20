@@ -9,7 +9,7 @@
 [Link to Google Doc](https://docs.google.com/document/d/1LkQzTVNNa0z429dkOtN4aGk9bbcmO6NvVNjhyjP6p9c/edit?ts=5f3e78af)
 
 # MongoDB Schema
-''
+``
     {
         "imgURL": "https://images.unsplash.com/photo-1597456637600-5508b1dec494?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3000&q=80",
         "title": "Build-A-Webpage Day",
@@ -20,7 +20,7 @@
         "age": 11
     }
 
-''
+``
 
 # MVP
 
