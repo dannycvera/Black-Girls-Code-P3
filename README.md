@@ -38,6 +38,6 @@ BGC Screens:
 # PMVP
 
 BGC Screens:
-- Donation Page 1, 2, 3
 - Mobile Layout with CSS
+- Donation Page 1, 2, 3
 - Limited CRUD functionality in Donor Wall component
