@@ -13,7 +13,7 @@ Our goal is to bring to life the design layout of the Black Girls Code (BGC) web
 
 # MongoDB Schema
 
-For CRUD functionality in "Where your money goes" component
+For CRUD functionality in Donation info screen/"Where your money goes" component
 
 ```
     {
