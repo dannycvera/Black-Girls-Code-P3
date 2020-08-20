@@ -40,4 +40,4 @@ BGC Screens:
 BGC Screens:
 - Donation Page 1, 2, 3
 - Mobile Layout with CSS
-- CRUD functionaility in Donar Wall component
+- Limited CRUD functionality in Donor Wall component
