@@ -8,6 +8,7 @@ const Event = new Schema(
     funds: { type: Number, required: true },
     content: { type: String, required: true },
     quote: { type: String, required: true },
+    author: { type: String, required: true },
     age: { type: Number, required: true },
   },
   { timestamps: true }
