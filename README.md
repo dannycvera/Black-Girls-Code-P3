@@ -16,15 +16,18 @@ Our goal is to bring to life the design layout of the Black Girls Code (BGC) web
 For CRUD functionality in Donation info screen/"Where your money goes" component
 
 ```
-    {
-        "imgURL": "https://images.unsplash.com/photo-1597456637600-5508b1dec494?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3000&q=80",
-        "title": "Build-A-Webpage Day",
-        "funds": 30,
-        "content": " etsy tilde mumblecore disrupt air plant twee everyday carry. Semiotics fixie PBR&B master ral venmo ",
-        "quote": "My favorite part was making Unicorns in Javascript",
-        "author":"Leah",
-        "age": 11
-    }
+const Product = new Schema(
+  {
+    
+    imgURL: { type: String, required: true },
+    title: { type: String, required: true },
+    funds: { type: Number, required: true },
+    content: { type: String, required: true },
+    quote: { type: String, required: true },
+    age: { type: Number, required: true }
+  },
+  { timestamps: true }
+)
 
 ```
 
