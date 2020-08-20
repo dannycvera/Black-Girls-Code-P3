@@ -16,7 +16,7 @@ Our goal is to bring to life the design layout of the Black Girls Code (BGC) web
 For CRUD functionality in Donation info screen/"Where your money goes" component
 
 ```
-const Product = new Schema(
+const Event = new Schema(
   {
     
     imgURL: { type: String, required: true },
