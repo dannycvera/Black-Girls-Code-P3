@@ -28,7 +28,7 @@
 BGC Screens:
 - Home
 - About Us
-- Donation info (Full CRUD functionality will be implimented in "Where Your Money Goes")
+- Donation info (Full CRUD functionality will be implimented in "Where Your Money Goes" component)
 
 # PMVP
 
