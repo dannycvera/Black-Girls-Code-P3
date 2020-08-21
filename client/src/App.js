@@ -2,8 +2,8 @@ import React from "react";
 import "./App.css";
 import Home from "./screens/Home/Home";
 // import Events from "./screens/Events/Events";
-// import EventsCreate from "./screens/EventCreate/EventCreate";
-// import EventEdit from "./screens/EventEdit/EventEdit";
+import EventCreate from "./screens/EventCreate/EventCreate";
+import EventEdit from "./screens/EventEdit/EventEdit";
 
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
@@ -14,8 +14,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         {/* <Route exact path="/events" component={Events} /> */}
-        {/* <Route exact path="/newEvent" component={EventCreate} />
-        <Route exact path="/events/:id/edit" component={EventEdit} /> */}
+        {<Route exact path="/newEvent" component={EventCreate} />}
+        {<Route exact path="/events/edit/:id" component={EventEdit} />}
       </Switch>
     </div>
   );
