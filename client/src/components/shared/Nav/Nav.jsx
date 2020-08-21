@@ -1,44 +1,37 @@
 import React, { useState } from "react";
 import "./Nav.css";
+// import Header from "../Header/Header";
 import { NavLink } from "react-router-dom";
 
 function Nav() {
-  const [show, updShow] = useState("");
-
-  const handleHover = () => {
-    updShow("show");
-  };
-
-  const handleHoverExit = () => {
-    updShow("");
-  };
   return (
     <nav>
       <div className="nav">
-        <div className="header">
+        {/* <Header /> */}
+        {/* <div className="header">
           <NavLink className="logo" to="/">
             EventsApp
           </NavLink>
           <div>
             <input type="text"></input>
           </div>
-        </div>
+        </div> */}
         <div className="links">
           <NavLink className="link" to="/">
             HOME
           </NavLink>
-          <div className="drop-down-about">
-            <NavLink
-              className="link"
-              to="/"
-              onMouseEnter={handleHover}
-              onMouseLeave={handleHoverExit}
-            >
+          <div className="drop-down-list">
+            <NavLink className="link" to="/">
               ABOUT BGC
             </NavLink>
-            <ul className={`drop-down ${show}`}>
-              <li>What We Do</li>
-              <li>Where Your Money Goes</li>
+            <ul className="drop-down">
+              <li>
+                <NavLink to="/">What We Do</NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/Events">Where Your Money Goes</NavLink>
+              </li>
             </ul>
           </div>
 
