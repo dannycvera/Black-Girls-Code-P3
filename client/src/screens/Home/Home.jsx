@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Layout from "../../shared/Layout/Layout";
+import Layout from "../../components/shared/Layout/Layout";
 
 function Home() {
   return (
