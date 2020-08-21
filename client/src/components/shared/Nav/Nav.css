@@ -1,4 +1,12 @@
 /* Nav CSS  */
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 .nav {
   display: flex;
   justify-content: center;
@@ -20,6 +28,14 @@
   background-color: black;
   color: white;
 }
+
+/* .links {
+  text-decoration: none;
+}
+
+.links:visited {
+  text-decoration: none;
+} */
 
 ul {
   opacity: 0;
