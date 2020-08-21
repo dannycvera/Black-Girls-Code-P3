@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Nav.css";
 import { NavLink } from "react-router-dom";
 
 function Nav() {
+  const [show, updShow] = useState("");
+
+  const handleHover = () => {
+    updShow("show");
+  };
+
+  const handleHoverExit = () => {
+    updShow("");
+  };
   return (
     <nav>
       <div className="nav">
@@ -15,34 +24,39 @@ function Nav() {
           </div>
         </div>
         <div className="links">
-          <div className="drop-down">
-            <NavLink className="link" to="/">
-              HOME
-            </NavLink>
-            <NavLink className="link" to="/">
+          <NavLink className="link" to="/">
+            HOME
+          </NavLink>
+          <div className="drop-down-about">
+            <NavLink
+              className="link"
+              to="/"
+              onMouseEnter={handleHover}
+              onMouseLeave={handleHoverExit}
+            >
               ABOUT BGC
             </NavLink>
-            {/* <ul>
+            <ul className={`drop-down ${show}`}>
               <li>What We Do</li>
               <li>Where Your Money Goes</li>
-            </ul> */}
-
-            <NavLink className="link" to="/">
-              PROGRAM/EVENTS
-            </NavLink>
-            <NavLink className="link" to="/">
-              PRESS
-            </NavLink>
-            <NavLink className="link" to="/">
-              JOIN US
-            </NavLink>
-            <NavLink className="link" to="/">
-              PARENTS
-            </NavLink>
-            <NavLink className="link" to="/">
-              CONTACT US
-            </NavLink>
+            </ul>
           </div>
+
+          <NavLink className="link" to="/">
+            PROGRAM/EVENTS
+          </NavLink>
+          <NavLink className="link" to="/">
+            PRESS
+          </NavLink>
+          <NavLink className="link" to="/">
+            JOIN US
+          </NavLink>
+          <NavLink className="link" to="/">
+            PARENTS
+          </NavLink>
+          <NavLink className="link" to="/">
+            CONTACT US
+          </NavLink>
         </div>
       </div>
     </nav>
