@@ -5,7 +5,7 @@ import Layout from "../../components/shared/Layout/Layout";
 function Home() {
   return (
     <Layout>
-      <div className="home"> </div>
+      <div className="home"></div>
     </Layout>
   );
 }
