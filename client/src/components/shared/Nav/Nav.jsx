@@ -30,7 +30,9 @@ function Nav() {
               </li>
 
               <li>
-                <NavLink to="/Events">Where Your Money Goes</NavLink>
+                <NavLink to="/whereyourmoneygoes">
+                  Where Your Money Goes
+                </NavLink>
               </li>
             </ul>
           </div>
