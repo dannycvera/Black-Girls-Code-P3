@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import Layout from "../../components/shared/Layout/Layout";
-import { useParams, Redirect } from "react-router-dom";
-import { getEvent, updateEvent, deleteEvent } from "../../services/events.js";
+import React, { useState, useEffect } from "react"
+import Layout from "../../components/shared/Layout/Layout"
+import { useParams, Redirect } from "react-router-dom"
+import { getEvent, updateEvent, deleteEvent } from "../../services/events.js"
 
 // import "./EventEdit.css";
 
@@ -14,49 +14,47 @@ const EventEdit = (props) => {
     quote: "",
     author: "",
     age: 0,
-  });
+  })
 
-  const [isUpdated, setIsUpdated] = useState(false);
-  const [isEventDeleted, setIsEventDeleted] = useState(false);
+  const [isUpdated, setIsUpdated] = useState(false)
+  const [isEventDeleted, setIsEventDeleted] = useState(false)
 
-  let { id } = useParams();
+  let { id } = useParams()
 
   useEffect(() => {
     const fetchEvent = async () => {
-      const event = await getEvent(id);
-      setEvent(event);
-    };
-    fetchEvent();
-  }, [id]);
+      const event = await getEvent(id)
+      setEvent(event)
+    }
+    fetchEvent()
+  }, [id])
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target
     setEvent({
       ...event,
       [name]: value,
-    });
+    })
+  }
 
-  };
-
-  const handleDelete = (e) => {
-    e.preventDefault();
-    deleteEvent(event._id);
-    setIsEventDeleted(!isEventDeleted);
-  };
+  const handleDelete = () => {
+    deleteEvent(event._id)
+    setIsEventDeleted(!isEventDeleted)
+  }
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    let { id } = props.match.params;
-    const updatedEvent = await setEvent(id, event);
-    setIsUpdated(updatedEvent);
-  };
+    e.preventDefault()
+    let { id } = props.match.params
+    const updatedEvent = await updateEvent(id, event)
+    setIsUpdated(updatedEvent)
+  }
 
   if (isUpdated) {
-    return <Redirect to={"/events"} />;
+    return <Redirect to={"/whereyourmoneygoes"} />
   }
 
   if (isEventDeleted) {
-    return <Redirect to={"/events"} />;
+    return <Redirect to={"/whereyourmoneygoes"} />
   }
 
   return (
@@ -68,7 +66,7 @@ const EventEdit = (props) => {
         <form className="edit-form" onSubmit={handleSubmit}>
           <label htmlFor="imgURL">
             ImageURL:
-           <input
+            <input
               className="edit-img-link"
               placeholder="Img Link"
               value={event.imgURL}
@@ -79,7 +77,7 @@ const EventEdit = (props) => {
           </label>
           <label htmlFor="title">
             Title:
-           <input
+            <input
               className="input-title"
               placeholder="Title"
               name="title"
@@ -91,7 +89,7 @@ const EventEdit = (props) => {
           </label>
           <label htmlFor="funds">
             Percentage:
-         <input
+            <input
               className="input-funds"
               placeholder="Percentage"
               name="funds"
@@ -103,7 +101,7 @@ const EventEdit = (props) => {
 
           <label htmlFor="content">
             Content:
-        <textarea
+            <textarea
               className="textarea-content"
               rows={30}
               placeholder="Content"
@@ -115,7 +113,7 @@ const EventEdit = (props) => {
           </label>
           <label htmlFor="quote">
             Quote:
-         <input
+            <input
               className="input-quote"
               placeholder="Quote"
               name="quote"
@@ -126,7 +124,7 @@ const EventEdit = (props) => {
           </label>
           <label htmlFor="author">
             Author:
-       <input
+            <input
               className="input-author"
               placeholder="Author"
               name="author"
@@ -137,7 +135,7 @@ const EventEdit = (props) => {
           </label>
           <label htmlFor="age">
             Age:
-         <input
+            <input
               className="input-age"
               placeholder="Age"
               name="age"
@@ -146,16 +144,14 @@ const EventEdit = (props) => {
               onChange={handleChange}
             />
           </label>
-          <button className="edit-button">
-            Edit
-          </button>
+          <button className="edit-button">Edit</button>
           <button className="delete-button" onClick={handleDelete}>
             Delete
-        </button>
+          </button>
         </form>
       </div>
     </Layout>
   )
 }
 
-export default EventEdit;
+export default EventEdit
