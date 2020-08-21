@@ -7,10 +7,32 @@
 .header {
   display: flex;
   width: 70vw;
-  width: 100%;
 }
 .links {
   display: flex;
   width: 70vw;
   justify-content: flex-start;
+}
+
+.link,
+.drop-down-about {
+  padding: 10px 5px 10px 5px;
+  background-color: black;
+  color: white;
+}
+
+ul {
+  opacity: 0;
+}
+.drop-down {
+  transition: 0.2s linear;
+}
+
+.show {
+  /* display: none; */
+  opacity: 1;
+}
+
+li {
+  list-style-type: none;
 }
