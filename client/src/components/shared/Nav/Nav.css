@@ -1,47 +1,71 @@
-/* Nav CSS  */
+/* Color palette 
+strong-pink-two: #f90c86*/
 a {
   text-decoration: none;
+  color: white;
 }
 
 a:visited {
   text-decoration: none;
+  color: white;
 }
+/* 
+.logo {
+  background-image: url("../../../img/logo.png");
+  width: 200px;
+  height: 200px;
+} */
 
 .nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .header {
   display: flex;
   width: 70vw;
 }
 .links {
   display: flex;
-  width: 70vw;
+  align-items: center;
   justify-content: flex-start;
+  width: 70vw;
+  height: 55px;
+  /* line-height: 30px; */
+  background-color: black;
+  font-size: 14px;
 }
 
 .link,
-.drop-down-about {
-  padding: 10px 5px 10px 5px;
-  background-color: black;
+.drop-down-list {
+  padding: 10px 12px;
   color: white;
+  white-space: nowrap;
 }
 
-/* .links {
-  text-decoration: none;
+.link {
+  height: 15px;
+  border: 1px solid red;
 }
 
-.links:visited {
-  text-decoration: none;
-} */
-
-ul {
+/* drop down fade effect from by inorganik see stack overflow below */
+/* https://stackoverflow.com/questions/10285375/can-css3-drop-down-menu-fade-in-and-fade-out/21835364 */
+.drop-down-list .drop-down {
   opacity: 0;
-}
-.drop-down {
+  visibility: collapse;
   transition: 0.2s linear;
+  background-color: black;
+}
+
+.link:hover,
+.drop-down > li:hover {
+  background-color: #f90c86;
+  border-radius: 5px;
+}
+.drop-down-list:hover .drop-down {
+  opacity: 1;
+  visibility: visible;
 }
 
 .show {
@@ -49,6 +73,9 @@ ul {
   opacity: 1;
 }
 
-li {
-  list-style-type: none;
+ul {
+  list-style: none;
+  text-decoration: none;
+  padding: 0 12px;
+  position: absolute;
 }
