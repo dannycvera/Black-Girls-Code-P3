@@ -7,7 +7,7 @@ export default function Logo() {
 	return (
 		<div className="hot-zone-home">
 			<NavLink to="/">
-				<img className="logo" src={logo} alt="blackgirlscode" />
+				<img className="logo" src={logo} alt="black girls code" />
 			</NavLink>
 		</div>
 	)

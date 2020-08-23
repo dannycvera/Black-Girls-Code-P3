@@ -1,0 +1,29 @@
+button {
+	width: 81px;
+	height: 30px;
+	border-radius: 2px;
+	color: white;
+	border: none;
+	background-image: linear-gradient(to top, #ff0072, #ff7cab);
+	font-size: 12px;
+	margin: 10px 0px 0px 40px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+}
+
+.social {
+	color: grey;
+	margin-left: 16px;
+	padding: 98px 0 10px;
+}
+
+.search {
+	width: 148px;
+	height: 24px;
+	border-radius: 5px;
+	padding-left: 10px;
+}
