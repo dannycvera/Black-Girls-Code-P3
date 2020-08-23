@@ -1,6 +1,44 @@
-/* home css */
-/* .home {
-  height: 200px;
-  width: 100%;
-  background-color: green;
-} */
+/* Home CSS */
+body {
+  background-color: #202020;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center
+}
+h1{
+  color:#f90c86
+}
+span {
+  color: #ff7cab;
+  font-weight: bold;
+}
+
+.title {
+  color: #ff7cab;
+  font-weight: bold;
+}
+.students{
+  width: 60vw
+}
+.blackboard_img{
+  float:left;
+  height: 600px;
+  width: 520px;
+  margin: 10px;
+}
+.office_text{
+  float:left;
+  text-align: left;
+  margin: 10px 560px 10px 10px
+}
+.right_text{
+  margin: 10px 100px 10px 200px;
+  font-size: 12px;
+  text-align: left;
+}
+.boys{
+  height: 20vw;
+  float: left;
+}
