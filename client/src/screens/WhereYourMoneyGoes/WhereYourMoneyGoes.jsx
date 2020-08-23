@@ -11,14 +11,26 @@ const WhereYourMoneyGoes = (props) => {
       setEvents(event)
     }
     fetchEvents()
-  }, [])
+  }, [events])
   return (
     <Layout>
       <div>
         {events.map((event) => {
           return (
             <div>
-              <img src={event.imgURL} alt="image URL" />
+              {/* {if(event.imgURL.includes(".jpg")){
+                return <img src={require(`../../img/${event.imgURL})} alt="image url"/>
+              } else { 
+                return <img src={event.imgURL} alt="image url"/>
+              }} */}
+              <img
+                src={
+                  event.imgURL.startsWith("http")
+                    ? event.imgURL
+                    : require(`../../img/${event.imgURL}`)
+                }
+                alt="image URL"
+              />
               <h3>{event.title}</h3>
               <h4>
                 %{event.funds} of donations went towards funding this event
