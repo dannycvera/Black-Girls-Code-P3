@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react";
 // import "./WhereYourMoneyGoes.css";
-import { getEvents } from "../../services/events.js"
-import Layout from "../../components/shared/Layout/Layout"
+import { getEvents } from "../../services/events.js";
+import Layout from "../../components/shared/Layout/Layout";
 
 const WhereYourMoneyGoes = (props) => {
-  const [events, setEvents] = useState([])
+  const [events, setEvents] = useState([]);
   useEffect(() => {
     const fetchEvents = async () => {
-      const event = await getEvents()
-      setEvents(event)
-    }
-    fetchEvents()
-  }, [events])
+      const event = await getEvents();
+      setEvents(event);
+    };
+    fetchEvents();
+  }, []);
   return (
     <Layout>
       <div>
@@ -40,10 +40,10 @@ const WhereYourMoneyGoes = (props) => {
               <h4> -{event.author},</h4>
               <h4> {event.age}</h4>
             </div>
-          )
+          );
         })}
       </div>
     </Layout>
-  )
-}
-export default WhereYourMoneyGoes
+  );
+};
+export default WhereYourMoneyGoes;
