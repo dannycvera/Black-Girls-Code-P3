@@ -61,7 +61,16 @@ const EventEdit = (props) => {
     <Layout>
       <div className="event-edit">
         <div className="img-container">
-          <img className="event-image" src={event.imgURL} alt={event.title} />
+          <img
+            className="event-image"
+            src={
+              event.imgURL
+              // event.imgURL.startsWith("http")
+              //   ? event.imgURL
+              //   : require(`../../img/${event.imgURL}`)
+            }
+            alt={event.title}
+          />
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
           <label htmlFor="imgURL">

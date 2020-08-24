@@ -1,0 +1,62 @@
+.html {
+  width: 950px;
+}
+
+h1 {
+  border-bottom: solid grey;
+  width: 700px;
+  padding: 20px 0 20px 0;
+  margin: 0 auto;
+}
+
+.events-container {
+  width: 950px;
+  margin: 0 50px 20px 100px;
+}
+
+.edit-button {
+  width: 81px;
+  height: 30px;
+  border-radius: 2px;
+  color: white;
+  border: none;
+  background-image: linear-gradient(to top, #ff0072, #ff7cab);
+  font-size: 12px;
+  margin: 0;
+}
+
+.title-button {
+  display: flex;
+}
+.main-event {
+  display: flex;
+  margin-top: 30px;
+}
+
+.main-event img {
+  height: 160px;
+  width: 260px;
+}
+
+.event-content h3,
+h4,
+p {
+  margin: 9px 60px 0px 80px;
+  text-align: left;
+}
+
+.event-content h3 {
+  color: #ff7cab;
+  margin-top: 0;
+}
+
+.add-button {
+  width: 120px;
+  height: 30px;
+  border-radius: 2px;
+  color: white;
+  border: none;
+  background-image: linear-gradient(to top, #ff0072, #ff7cab);
+  font-size: 16px;
+  margin-top: 25px;
+}

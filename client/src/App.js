@@ -21,7 +21,7 @@ function App() {
           />
         }
         {<Route exact path="/newevent" component={EventCreate} />}
-        {<Route exact path="/events/edit/:id" component={EventEdit} />}
+        {<Route exact path="/event/edit/:id" component={EventEdit} />}
       </Switch>
     </div>
   )
