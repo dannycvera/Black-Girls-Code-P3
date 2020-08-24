@@ -6,23 +6,6 @@ import ReactDOM from "react-dom";
 import useSlider from "./useSlider";
 import "./Carousel.css";
 
-// const slides = [
-//   {
-//     imgURL: "carousel-1.jpg",
-//     title: "Break The Cycle",
-//     description: "Break The Cycle",
-//   },
-//   {
-//     imgURL: "carousel-2.jpg",
-//     title: "Break The Cycle",
-//     description: "Break The Cycle",
-//   },
-//   {
-//     imgURL: "carousel-3.jpg",
-//     title: "Break The Cycle",
-//     description: "Break The Cycle",
-//   },
-// ];
 const slides = [
   {
     imgURL: "carousel-1.jpg",
@@ -56,7 +39,6 @@ function Carousel() {
         className="scroller"
         style={{
           transform: `translate3d(-${offset * slideWidth}px,0,0)`,
-          // transform: `translate3d(-${offset * 950}px,0,0)`,
           width: `${slides.length * slideWidth}px`,
         }}
       >
