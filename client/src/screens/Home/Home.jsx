@@ -6,6 +6,7 @@ function Home() {
 	return (
 		<Layout>
 			<div className="home">
+         <Carousel />
 				<h1>Welcome to Black Girls Code!</h1>
 				<h2>Inspiring young girls of color</h2>
 				<img
