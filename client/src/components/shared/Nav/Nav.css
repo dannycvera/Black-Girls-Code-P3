@@ -52,7 +52,7 @@ a:visited {
 .link:hover,
 .drop-down > li:hover {
   /* background-color: #f90c86; */
-  background: linear-gradient(#f90c86, #ff7cab);
+  background: linear-gradient(#ff7cab, #f90c86);
   border-radius: 5px;
 }
 .drop-down-list:hover .drop-down {

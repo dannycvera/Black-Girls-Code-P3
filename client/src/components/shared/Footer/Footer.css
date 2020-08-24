@@ -1,7 +1,19 @@
-h3 {
-	color: white;
+.footer {
+	width: 100%;
+	height: 200px;
 	background-color: #202020;
-	width: 389px;
-	height: 18px;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+}
+
+.footer-text {
+	color: white;
 	font-size: 15px;
+}
+
+.facebook,
+.twitter,
+.linkedin {
+	margin: 0 4px;
 }

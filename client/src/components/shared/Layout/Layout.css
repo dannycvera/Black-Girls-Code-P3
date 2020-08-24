@@ -1,5 +1,4 @@
-.layout {
-}
-
-.layout-children {
+.layout header {
+	display: flex;
+	background-color: #202020;
 }

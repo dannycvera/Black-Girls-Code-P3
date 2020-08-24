@@ -1,12 +1,10 @@
 .logo {
 	width: 758px;
-	height: 190px;
 	margin: 0 auto;
-	margin-left: 190px;
+	margin-left: 220px;
 }
 
 .hot-zone-home {
 	width: 100% vh;
-	height: 255px;
-	background-color: #202020;
+	padding: 50px 0px 12px;
 }
