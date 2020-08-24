@@ -1,7 +1,7 @@
-button {
+.search-btn {
 	width: 81px;
 	height: 30px;
-	border-radius: 2px;
+	border-radius: 3px;
 	color: white;
 	border: none;
 	background-image: linear-gradient(to top, #ff0072, #ff7cab);
@@ -9,21 +9,27 @@ button {
 	margin: 10px 0px 0px 40px;
 }
 
-.container {
+.search-container {
 	display: flex;
 	flex-direction: column;
 	padding-left: 30px;
 }
 
-.social {
+.search-social {
+	display: flex;
 	color: grey;
-	margin-left: 16px;
-	padding: 98px 0 10px;
+	font-size: 12px;
+	margin-left: 29px;
+	padding: 98px 0 5px;
 }
 
 .search {
-	width: 148px;
-	height: 24px;
+	width: 158px;
+	height: 32px;
 	border-radius: 5px;
 	padding-left: 10px;
+}
+
+.social-text {
+	margin: 10px 12px 0 4px;
 }

@@ -1,1 +1,19 @@
-/*Footer CSS*/
+.footer {
+	width: 100%;
+	height: 200px;
+	background-color: #202020;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+}
+
+.footer-text {
+	color: white;
+	font-size: 15px;
+}
+
+.facebook,
+.twitter,
+.linkedin {
+	margin: 0 4px;
+}
