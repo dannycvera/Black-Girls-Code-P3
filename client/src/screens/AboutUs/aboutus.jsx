@@ -1,17 +1,17 @@
 import React from "react";
-import  "./aboutus.css";
+import "./aboutus.css";
 import Layout from "../../components/shared/Layout/Layout";
 import Footer from "client/src/components/shared/Footer/Footer.jsx"
 import Nav "from client/src/components/shared/Nav/Nav.jsx"
 
-//flex box component testing
-/* const ContainerStyle = {
+//flex box 
+const ContainerStyle = {
   display: 'flex',
   justifyContent: 'space-between',
-  width: */
+  width:
 }
 
-/* const Flex = (props) => (
+const Flex = (props) => (
   <div
     className={props.className}
     style={{
@@ -22,9 +22,6 @@ import Nav "from client/src/components/shared/Nav/Nav.jsx"
       flexBasis: props.flexBasis || 'auto',
       flexShrink: props.flexShrink || 1,
       flexWrap: props.flexWrap || 'nowrap',
-      flex: props.flex || '0 1 auto',
-      alignItems: props.alignItems || 'stretch',
-      margin: props.margin || '0',
       padding: props.padding || '0',
       width: props.width || 'auto',
       height: props.height || 'auto',
@@ -32,4 +29,4 @@ import Nav "from client/src/components/shared/Nav/Nav.jsx"
     }}
   >
     {props.children}
-  </div> */
+  </div> 
