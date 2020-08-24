@@ -1,3 +1,7 @@
+
+/* if using the flexcomp do ineed all el? */
+/*must edit */
+
 body {
   background-color: #202020;
   color: white;
@@ -17,4 +21,11 @@ span {
 .title {
   color: #ff7cab;
   font-weight: bold;
+}
+
+/*join our team */
+
+.column {
+  float: left;
+  width: 50%;
 }
