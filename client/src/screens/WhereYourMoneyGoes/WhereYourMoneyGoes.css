@@ -2,32 +2,31 @@
 	width: 950px;
 }
 
-.wmyg-title {
-	border-bottom: solid grey;
-	width: 700px;
-	padding: 20px 0 20px 0;
-	margin: 0 auto;
+h1 {
+  border-bottom: solid grey;
+  width: 850px;
+  padding: 20px 0 20px 0;
+  margin: 0 auto;
 }
 
 .events-container {
-	width: 950px;
-	margin: 0 50px 20px 100px;
+  width: 950px;
+  margin: 0 auto;
+  /* margin: 0 200px 20px 300px; */
 }
 
 .edit-button {
-	width: 81px;
-	height: 30px;
-	border-radius: 2px;
-	color: white;
-	border: none;
-	background-image: linear-gradient(to top, #ff0072, #ff7cab);
-	font-size: 12px;
-	margin: 0;
+  width: 81px;
+  height: 18px;
+  right: 0;
+  border-radius: 2px;
+  color: white;
+  border: none;
+  background-image: linear-gradient(to top, #ff0072, #ff7cab);
+  font-size: 12px;
 }
 
-.title-button {
-	display: flex;
-}
+
 .main-event {
 	display: flex;
 	margin-top: 30px;
@@ -41,8 +40,10 @@
 .event-content h3,
 h4,
 p {
-	margin: 9px 60px 0px 80px;
-	text-align: left;
+
+  margin: 9px 80px 0px 80px;
+  text-align: left;
+
 }
 
 .event-content h3 {
@@ -59,4 +60,8 @@ p {
 	background-image: linear-gradient(to top, #ff0072, #ff7cab);
 	font-size: 16px;
 	margin-top: 25px;
+}
+
+.title-button {
+  display: flex;
 }
