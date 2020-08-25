@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react"
 import { getEvents } from "../../services/events.js"
 import { Link } from "react-router-dom"
+import Contributors from "../../components/shared/Contributors/Contributors"
 import Layout from "../../components/shared/Layout/Layout"
+// import Footer from "../../components/shared/Footer/Footer"
 import "./WhereYourMoneyGoes.css"
 
 const WhereYourMoneyGoes = (props) => {
+
   const [events, setEvents] = useState([])
   useEffect(() => {
     const fetchEvents = async () => {
@@ -52,5 +55,6 @@ const WhereYourMoneyGoes = (props) => {
       </div>
     </Layout>
   )
+
 }
 export default WhereYourMoneyGoes
