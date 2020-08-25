@@ -1,0 +1,62 @@
+.event-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.event-edit > .img-container img {
+  border: 2px solid #ff7cab;
+  border-radius: 5px;
+  margin: 20px;
+}
+.edit-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.edit-form label {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: #ff7cab;
+  font-size: 17px;
+  margin: 4px;
+}
+
+.edit-form input,
+.edit-form textarea,
+.event-edit > .img-container img {
+  border-radius: 5px;
+  border: 2px solid #ff7cab;
+}
+.edit-form input,
+.edit-form textarea {
+  width: 80%;
+  padding: 3px;
+}
+
+.edit-form textarea {
+  height: 150px;
+}
+
+.event-edit-buttons {
+  width: 100%;
+  justify-content: center;
+  margin: 5px;
+}
+
+.delete-button {
+  width: 81px;
+  height: 18px;
+  right: 0;
+  border-radius: 2px;
+  color: white;
+  border: none;
+  background-image: linear-gradient(to top, #ff0072, #ff7cab);
+  font-size: 12px;
+  margin-left: 10px;
+}
