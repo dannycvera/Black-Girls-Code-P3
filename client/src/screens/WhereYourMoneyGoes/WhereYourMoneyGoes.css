@@ -2,9 +2,9 @@
   width: 950px;
 }
 
-h1 {
+.title-wymg {
   border-bottom: solid grey;
-  width: 850px;
+  width: 950px;
   padding: 20px 0 20px 0;
   margin: 0 auto;
 }
@@ -12,7 +12,20 @@ h1 {
 .events-container {
   width: 950px;
   margin: 0 auto;
-  /* margin: 0 200px 20px 300px; */
+  max-height: 800px;
+  overflow-y: scroll;
+}
+
+.events-container::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+}
+
+.events-container::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  border: 1px solid #000000;
+  background-color: #ff7cab;
+  height: 5px;
 }
 
 .edit-button {
@@ -22,6 +35,7 @@ h1 {
   border-radius: 2px;
   color: white;
   border: none;
+  margin-right: 5px;
   background-image: linear-gradient(to top, #ff0072, #ff7cab);
   font-size: 12px;
 }
@@ -33,14 +47,19 @@ h1 {
 
 .main-event img {
   height: 160px;
-  width: 260px;
+  width: 240px;
+  padding-left: 20px;
 }
 
 .event-content h3,
 h4,
 p {
-  margin: 9px 80px 0px 80px;
+  margin: 9px 70px 0px 75px;
   text-align: left;
+}
+
+.event-content p {
+  color: #b0b0b0;
 }
 
 .event-content h3 {
@@ -56,7 +75,7 @@ p {
   border: none;
   background-image: linear-gradient(to top, #ff0072, #ff7cab);
   font-size: 16px;
-  margin-top: 25px;
+  margin: 50px 0 50px 0;
 }
 
 .title-button {
