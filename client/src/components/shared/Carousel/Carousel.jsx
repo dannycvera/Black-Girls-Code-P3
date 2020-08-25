@@ -6,37 +6,40 @@ import ReactDOM from "react-dom";
 import useSlider from "./useSlider";
 import "./Carousel.css";
 
-// const slides = [
-//   {
-//     imgURL: "carousel-1.jpg",
-//     title: "Break The Cycle",
-//     description: "Break The Cycle",
-//   },
-//   {
-//     imgURL: "carousel-2.jpg",
-//     title: "Break The Cycle",
-//     description: "Break The Cycle",
-//   },
-//   {
-//     imgURL: "carousel-3.jpg",
-//     title: "Break The Cycle",
-//     description: "Break The Cycle",
-//   },
-// ];
 const slides = [
   {
     imgURL: "carousel-1.jpg",
-    title: "Slide 1",
+    title: "Carousel 1",
     color: "#56777A",
   },
   {
     imgURL: "carousel-2.jpg",
-    title: "Slide 2",
+    title: "Carousel 2",
     color: "#84ACAC",
   },
   {
     imgURL: "carousel-3.jpg",
-    title: "Slide 3",
+    title: "Carousel 3",
+    color: "#FBA434",
+  },
+  {
+    imgURL: "carousel-4.jpg",
+    title: "Carousel 4",
+    color: "#56777A",
+  },
+  {
+    imgURL: "carousel-5.jpg",
+    title: "Carousel 5",
+    color: "#84ACAC",
+  },
+  {
+    imgURL: "carousel-6.jpg",
+    title: "Carousel 6",
+    color: "#FBA434",
+  },
+  {
+    imgURL: "carousel-7.jpg",
+    title: "Carousel 7",
     color: "#FBA434",
   },
 ];
@@ -56,13 +59,13 @@ function Carousel() {
         className="scroller"
         style={{
           transform: `translate3d(-${offset * slideWidth}px,0,0)`,
-          // transform: `translate3d(-${offset * 950}px,0,0)`,
           width: `${slides.length * slideWidth}px`,
         }}
       >
         {slides.map((slide, index) => (
           <img
             className="slide"
+            alt={slide.title}
             src={require(`../../../img/${slide.imgURL}`)}
           />
           // <div
