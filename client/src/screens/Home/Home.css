@@ -1,6 +1,6 @@
 /* Home CSS */
 body {
-	background-color: #202020;
+  background-color: #202020;
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -8,8 +8,15 @@ body {
 	text-align: center;
 }
 
-h1 {
-	color: #f90c86;
+.home_title {
+  color: #f90c86;
+  border: none;
+  margin-bottom: 0px;
+  padding-bottom: 5px; 
+}
+.home_subtitle {
+  margin-top: 0px;
+  letter-spacing: 1.5px;
 }
 span {
 	color: #ff7cab;
@@ -20,24 +27,67 @@ span {
 	color: #ff7cab;
 	font-weight: bold;
 }
+.vision {
+  width: 950px;
+  margin: 10px 0px 10px 125px;
+  padding: 20px 40px;
+  line-height: 1.5rem;
+  
+}
 .students {
-	width: 60vw;
+  width: 950px;
+  border-top: 1.5px solid grey;
+  padding-top: 25px;
+}
+.student_text {
+  width: 950px;
+  margin: 10px 0px 10px 5px;
+  padding: 20px 40px;
+  line-height: 1.5rem;
+}
+.students_div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 950px;
+  border-bottom: 1.5px solid grey;
+  margin: 10px 0px 10px 115px;
+  
+}
+.sign_up_button {
+  width: 81px;
+  height: 30px;
+  background-image: linear-gradient(to top, #ff0072, #ff7cab);
+  color: white;
+  border: none;
+  font-size: 12px;
+  margin-bottom:30px
+}
+.floating_div {
+ margin: 0px 5px 0px 25px;
+ padding: 50px;
+ 
 }
 .blackboard_img {
 	float: left;
 	height: 600px;
-	width: 520px;
-	margin: 10px;
+	width: 480px;
+  margin: 0px 30px;
+  border-right: 1.5px solid grey;
+  padding-right: 20px;
+}
+
+.right_text {
+	margin: 0px;
+	font-size: 14px;
+  text-align: left;
+  
 }
 .office_text {
 	float: left;
 	text-align: left;
-	margin: 10px 560px 10px 10px;
-}
-.right_text {
-	margin: 10px 100px 10px 200px;
-	font-size: 12px;
-	text-align: left;
+	margin: 10px 560px 10px 28px;
 }
 .boys {
 	height: 20vw;

@@ -8,14 +8,14 @@ function Home() {
     <Layout>
       <div className="home">
         <Carousel />
-        <h1>Welcome to Black Girls Code!</h1>
-        <h2>Inspiring young girls of color</h2>
+        <h1 className='home_title'>Welcome to Black Girls Code!</h1>
+        <h2 className='home_subtitle'>Inspiring young girls of color</h2>
         <img
           src={require(`../../img/break-the-cycle.jpg`)}
           className="break_the_cycle"
           alt="break_the_cycle"
         />
-        <p>
+        <p className='vision'>
           <span>Our Vision:</span> To increase the number of women of color in
           the digital space by empowering girls of color ages 7 to 17 to become
           innovators in STEM fields, leaders in their communities, and builders
@@ -24,21 +24,26 @@ function Home() {
           occupy some of the 1.4 million computing job openings expected to be
           available in the U.S. by 2020, and to train 1 million girls by 2040.
         </p>
+      <div className='students_div'>
         <img
           src={require(`../../img/bgc_home_students.jpg`)}
           className="students"
           alt="students"
         />
-        <p>
+        <p className='student_text'>
           School is out, but for our #futuretechbosses, the fun and learning is
           just beginning! STEM from home with Black Girls CODE this summer. Our
           #CodeTheSummer virtual camps are here to give your tech geniuses the
           opportunity to learn all about video game design, iOS app development,
           and robotics. Camp officially begins on July 6 with a session for boys
           AND girls ages 7-9. Sessions for older students to be announced soon.{" "}
-        </p>
-        <button>Sign Up</button>
-        <h1>Join Our Team!</h1>
+          </p>
+        <a href={'https://www.blackgirlscode.com/programsevents.html'} target='_blank'>
+          <button className='sign_up_button'>Sign Up</button>
+        </a>
+      </div>
+        <h1 className='home_title'>Join Our Team!</h1>
+      <div className='floating_div'>
         <img
           src={require(`../../img/bgc_home_img.jpg`)}
           className="blackboard_img"
@@ -94,7 +99,8 @@ function Home() {
           </p>
           <p>Join our staff! Apply for job openings here.</p>
           <p>Sign up your budding coders below for our next class! </p>
-        </div>
+          </div>
+          </div>    
         <img
           src={require(`../../img/bgc_home_boys.jpg`)}
           className="boys"
