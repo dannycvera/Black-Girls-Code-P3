@@ -22,6 +22,26 @@ const slides = [
     title: "Slide 3",
     color: "#FBA434",
   },
+  {
+    imgURL: "carousel-4.jpg",
+    title: "Slide 1",
+    color: "#56777A",
+  },
+  {
+    imgURL: "carousel-5.jpg",
+    title: "Slide 2",
+    color: "#84ACAC",
+  },
+  {
+    imgURL: "carousel-6.jpg",
+    title: "Slide 3",
+    color: "#FBA434",
+  },
+  {
+    imgURL: "carousel-7.jpg",
+    title: "Slide 3",
+    color: "#FBA434",
+  },
 ];
 
 function Carousel() {
