@@ -1,0 +1,84 @@
+.html {
+  width: 950px;
+}
+
+.title-wymg {
+  border-bottom: solid grey;
+  width: 950px;
+  padding: 20px 0 20px 0;
+  margin: 0 auto;
+}
+
+.events-container {
+  width: 950px;
+  margin: 0 auto;
+  max-height: 800px;
+  overflow-y: scroll;
+}
+
+.events-container::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+}
+
+.events-container::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  border: 1px solid #000000;
+  background-color: #ff7cab;
+  height: 5px;
+}
+
+.edit-button {
+  width: 81px;
+  height: 18px;
+  right: 0;
+  border-radius: 2px;
+  color: white;
+  border: none;
+  margin-right: 5px;
+  background-image: linear-gradient(to top, #ff0072, #ff7cab);
+  font-size: 12px;
+}
+
+.main-event {
+  display: flex;
+  margin-top: 30px;
+}
+
+.main-event img {
+  height: 160px;
+  width: 240px;
+  padding-left: 20px;
+}
+
+.event-content h3,
+h4,
+p {
+  margin: 9px 70px 0px 75px;
+  text-align: left;
+}
+
+.event-content p {
+  color: #b0b0b0;
+}
+
+.event-content h3 {
+  color: #ff7cab;
+  margin-top: 0;
+}
+
+.add-button {
+  width: 120px;
+  height: 30px;
+  border-radius: 2px;
+  color: white;
+  border: none;
+  background-image: linear-gradient(to top, #ff0072, #ff7cab);
+  font-size: 16px;
+  margin: 50px 0 50px 0;
+}
+
+.title-button {
+  display: flex;
+  justify-content: space-between;
+}

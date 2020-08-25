@@ -1,0 +1,8 @@
+.layout header {
+	display: flex;
+	background-color: #202020;
+}
+
+.clear-fix {
+	clear: both;
+}

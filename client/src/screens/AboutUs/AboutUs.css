@@ -1,0 +1,43 @@
+/*about us css */
+body {
+  background-color: #202020;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  color: #f90c86;
+}
+span {
+  color: #ff7cab;
+  font-weight: bold;
+}
+
+.title {
+  color: #ff7cab;
+  font-weight: bold;
+}
+
+/* .group-photo {
+    float: left;
+    height: 206px;
+    width: 347px;
+    margin: 10px;
+
+}
+.girls-in-class-photo {
+  float: right;
+  height: 223px;
+  width: 320px;
+  margin: 10px;
+
+}
+.girl-laptop {
+  float: left;
+  height: 320px;
+  width: 223px;
+  margin: 10px;
+
+} */
