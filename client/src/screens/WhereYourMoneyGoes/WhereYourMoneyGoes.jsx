@@ -32,7 +32,7 @@ const WhereYourMoneyGoes = (props) => {
                 <div className="title-button">
                   <h3>{event.title}</h3>
                   <Link to={`/event/edit/${event._id}`}>
-                    <button className="edit-button">Edit</button>
+                    <button className="edit-button">Edit Event</button>
                   </Link>
                 </div>
                 <h4>
