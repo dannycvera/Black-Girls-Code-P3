@@ -46,11 +46,11 @@ a:visited {
   visibility: collapse;
   transition: 0.2s linear;
   background-color: black;
-  padding-bottom: 6px;
+
   text-align: left;
   list-style: none;
   text-decoration: none;
-  padding: 0 6px;
+  padding: 6px 6px;
   position: absolute;
   z-index: 3;
 }
