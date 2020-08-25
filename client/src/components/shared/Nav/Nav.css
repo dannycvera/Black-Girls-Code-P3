@@ -46,7 +46,12 @@ a:visited {
   visibility: collapse;
   transition: 0.2s linear;
   background-color: black;
-  padding-bottom: 6px;
+
+  text-align: left;
+  list-style: none;
+  text-decoration: none;
+  padding: 6px 6px;
+  position: absolute;
   z-index: 3;
 }
 
@@ -68,14 +73,9 @@ a:visited {
   white-space: nowrap;
 }
 
-.show {
-  /* display: none; */
-  opacity: 1;
-}
-
-ul {
+/* ul {
   list-style: none;
   text-decoration: none;
   padding: 0 6px;
   position: absolute;
-}
+} */

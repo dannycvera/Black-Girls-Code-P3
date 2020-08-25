@@ -9,37 +9,37 @@ import "./Carousel.css";
 const slides = [
   {
     imgURL: "carousel-1.jpg",
-    title: "Slide 1",
+    title: "Carousel 1",
     color: "#56777A",
   },
   {
     imgURL: "carousel-2.jpg",
-    title: "Slide 2",
+    title: "Carousel 2",
     color: "#84ACAC",
   },
   {
     imgURL: "carousel-3.jpg",
-    title: "Slide 3",
+    title: "Carousel 3",
     color: "#FBA434",
   },
   {
     imgURL: "carousel-4.jpg",
-    title: "Slide 1",
+    title: "Carousel 4",
     color: "#56777A",
   },
   {
     imgURL: "carousel-5.jpg",
-    title: "Slide 2",
+    title: "Carousel 5",
     color: "#84ACAC",
   },
   {
     imgURL: "carousel-6.jpg",
-    title: "Slide 3",
+    title: "Carousel 6",
     color: "#FBA434",
   },
   {
     imgURL: "carousel-7.jpg",
-    title: "Slide 3",
+    title: "Carousel 7",
     color: "#FBA434",
   },
 ];
@@ -65,6 +65,7 @@ function Carousel() {
         {slides.map((slide, index) => (
           <img
             className="slide"
+            alt={slide.title}
             src={require(`../../../img/${slide.imgURL}`)}
           />
           // <div
