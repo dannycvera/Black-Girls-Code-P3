@@ -1,8 +1,9 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 // import './EventCreate.cc'
-import Layout from "../../components/shared/Layout/Layout"
-import { Redirect } from "react-router-dom"
-import { createEvent } from "../../services/events"
+import "./EventCreate.css";
+import Layout from "../../components/shared/Layout/Layout";
+import { Redirect } from "react-router-dom";
+import { createEvent } from "../../services/events";
 
 const EventCreate = (props) => {
   const [event, setEvent] = useState({
@@ -13,26 +14,26 @@ const EventCreate = (props) => {
     quote: "",
     author: "",
     age: 0,
-  })
+  });
 
-  const [isCreated, setCreated] = useState(false)
+  const [isCreated, setCreated] = useState(false);
 
   const handleChange = (e) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
     setEvent({
       ...event,
       [name]: value,
-    })
-  }
+    });
+  };
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    const created = await createEvent(event)
-    setCreated({ created })
-  }
+    e.preventDefault();
+    const created = await createEvent(event);
+    setCreated({ created });
+  };
 
   if (isCreated) {
-    return <Redirect to={`/whereyourmoneygoes`} />
+    return <Redirect to={`/whereyourmoneygoes`} />;
   }
   return (
     <Layout user={props.user}>
@@ -101,7 +102,7 @@ const EventCreate = (props) => {
         </button>
       </form>
     </Layout>
-  )
-}
+  );
+};
 
-export default EventCreate
+export default EventCreate;
