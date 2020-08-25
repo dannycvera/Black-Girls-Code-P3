@@ -1,24 +1,24 @@
-import React, { useEffect, useState } from "react";
-import { getEvents } from "../../services/events.js";
-import { Link } from "react-router-dom";
-import Contributors from "../../components/shared/Contributors/Contributors";
-import Layout from "../../components/shared/Layout/Layout";
+import React, { useEffect, useState } from "react"
+import { getEvents } from "../../services/events.js"
+import { Link } from "react-router-dom"
+import Contributors from "../../components/shared/Contributors/Contributors"
+import Layout from "../../components/shared/Layout/Layout"
 // import Footer from "../../components/shared/Footer/Footer"
-import "./WhereYourMoneyGoes.css";
+import "./WhereYourMoneyGoes.css"
 
 const WhereYourMoneyGoes = (props) => {
-  const [events, setEvents] = useState([]);
+  const [events, setEvents] = useState([])
   useEffect(() => {
     const fetchEvents = async () => {
-      const event = await getEvents();
-      setEvents(event);
-    };
-    fetchEvents();
-  }, [setEvents]);
+      const event = await getEvents()
+      setEvents(event)
+    }
+    fetchEvents()
+  }, [setEvents])
   return (
     <div>
       <Layout>
-        <h1> Where Your Money Goes</h1>
+        <h1 className="title-wymg"> Where Your Money Goes</h1>
         <div className="events-container">
           {events.map((event) => {
             return (
@@ -43,22 +43,21 @@ const WhereYourMoneyGoes = (props) => {
                   </h4>
                   <p>{event.content}</p>
                   <h4 className="quote">
-                    "{event.quote}" -{event.author}, {event.age}
+                    "<em>{event.quote}</em>" -{event.author}, {event.age}
                   </h4>
                 </div>
               </div>
-            );
+            )
           })}
-          <Link to="/newevent">
-            <button className="add-button">Add Event</button>
-          </Link>
+        </div>
+        <Link to="/newevent">
+          <button className="add-button">Add Event</button>
+        </Link>
+        <div className="contributors">
+          <Contributors />
         </div>
       </Layout>
-      <div className="contributors">
-        <Contributors />
-      </div>
-      {/* <Footer /> */}
     </div>
-  );
-};
-export default WhereYourMoneyGoes;
+  )
+}
+export default WhereYourMoneyGoes
