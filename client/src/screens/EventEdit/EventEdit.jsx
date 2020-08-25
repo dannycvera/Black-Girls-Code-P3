@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react"
-import Layout from "../../components/shared/Layout/Layout"
-import { useParams, Redirect } from "react-router-dom"
-import { getEvent, updateEvent, deleteEvent } from "../../services/events.js"
+import React, { useState, useEffect } from "react";
+import Layout from "../../components/shared/Layout/Layout";
+import { useParams, Redirect } from "react-router-dom";
+import { getEvent, updateEvent, deleteEvent } from "../../services/events.js";
 
-// import "./EventEdit.css";
+import "./EventEdit.css";
 
 const EventEdit = (props) => {
   const [event, setEvent] = useState({
@@ -14,53 +14,54 @@ const EventEdit = (props) => {
     quote: "",
     author: "",
     age: 0,
-  })
+  });
 
-  const [isUpdated, setIsUpdated] = useState(false)
-  const [isEventDeleted, setIsEventDeleted] = useState(false)
+  const [isUpdated, setIsUpdated] = useState(false);
+  const [isEventDeleted, setIsEventDeleted] = useState(false);
 
-  let { id } = useParams()
+  let { id } = useParams();
 
   useEffect(() => {
     const fetchEvent = async () => {
-      const event = await getEvent(id)
-      setEvent(event)
-    }
-    fetchEvent()
-  }, [id])
+      const event = await getEvent(id);
+      setEvent(event);
+    };
+    fetchEvent();
+  }, [id]);
 
   const handleChange = (e) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
     setEvent({
       ...event,
       [name]: value,
-    })
-  }
+    });
+  };
 
   const handleDelete = () => {
-    deleteEvent(event._id)
-    setIsEventDeleted(!isEventDeleted)
-  }
+    deleteEvent(event._id);
+    setIsEventDeleted(!isEventDeleted);
+  };
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    let { id } = props.match.params
-    const updatedEvent = await updateEvent(id, event)
-    setIsUpdated(updatedEvent)
-  }
+    e.preventDefault();
+    let { id } = props.match.params;
+    const updatedEvent = await updateEvent(id, event);
+    setIsUpdated(updatedEvent);
+  };
 
   if (isUpdated) {
-    return <Redirect to={"/whereyourmoneygoes"} />
+    return <Redirect to={"/whereyourmoneygoes"} />;
   }
 
   if (isEventDeleted) {
-    return <Redirect to={"/whereyourmoneygoes"} />
+    return <Redirect to={"/whereyourmoneygoes"} />;
   }
 
   return (
     <Layout>
       <div className="event-edit">
         <div className="img-container">
+<<<<<<< HEAD
           <img
             className="event-image"
             src={
@@ -71,6 +72,19 @@ const EventEdit = (props) => {
             }
             alt={event.title}
           />
+=======
+          {event.imgURL.length > 0 && (
+            <img
+              className="event-image"
+              src={
+                event.imgURL.startsWith("http")
+                  ? event.imgURL
+                  : require(`../../img/${event.imgURL}`)
+              }
+              alt={event.title}
+            />
+          )}
+>>>>>>> cd31aa3a7c4e58f9a1c758ba53528ccce60a7ad7
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
           <label htmlFor="imgURL">
@@ -84,6 +98,7 @@ const EventEdit = (props) => {
               onChange={handleChange}
             />
           </label>
+
           <label htmlFor="title">
             Title:
             <input
@@ -96,6 +111,7 @@ const EventEdit = (props) => {
               onChange={handleChange}
             />
           </label>
+
           <label htmlFor="funds">
             Percentage:
             <input
@@ -112,7 +128,7 @@ const EventEdit = (props) => {
             Content:
             <textarea
               className="textarea-content"
-              rows={30}
+              // rows={30}
               placeholder="Content"
               value={event.content}
               name="content"
@@ -120,6 +136,7 @@ const EventEdit = (props) => {
               onChange={handleChange}
             />
           </label>
+
           <label htmlFor="quote">
             Quote:
             <input
@@ -131,6 +148,7 @@ const EventEdit = (props) => {
               onChange={handleChange}
             />
           </label>
+
           <label htmlFor="author">
             Author:
             <input
@@ -142,6 +160,7 @@ const EventEdit = (props) => {
               onChange={handleChange}
             />
           </label>
+
           <label htmlFor="age">
             Age:
             <input
@@ -153,14 +172,16 @@ const EventEdit = (props) => {
               onChange={handleChange}
             />
           </label>
-          <button className="edit-button">Edit</button>
-          <button className="delete-button" onClick={handleDelete}>
-            Delete
-          </button>
+          <div className="event-edit-buttons">
+            <button className="edit-button">Edit</button>
+            <button className="delete-button" onClick={handleDelete}>
+              Delete
+            </button>
+          </div>
         </form>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default EventEdit
+export default EventEdit;

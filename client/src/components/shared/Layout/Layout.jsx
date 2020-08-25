@@ -14,7 +14,12 @@ function Layout(props) {
 			</header>
 			<Nav />
 			<div className="layout-children">{props.children}</div>
+<<<<<<< HEAD
 			{/* <Footer /> */}
+=======
+			<div className="clear-fix"></div>
+			<Footer />
+>>>>>>> cd31aa3a7c4e58f9a1c758ba53528ccce60a7ad7
 		</div>
 	)
 }

@@ -16,7 +16,7 @@ function Nav() {
             </NavLink>
             <ul className="drop-down">
               <li>
-                <NavLink to="/">What We Do</NavLink>
+                <NavLink to="/whatwedo">What We Do</NavLink>
               </li>
               <li>
                 <NavLink to="/whereyourmoneygoes">

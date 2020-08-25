@@ -1,0 +1,70 @@
+.contributor-container {
+	/* margin: 0 auto; */
+	/* justify-content: center; */
+}
+
+.logos {
+	display: grid;
+	grid-template-columns: 375px 400px 375px;
+	grid-template-rows: 125px 80px 125px;
+	grid-template-areas:
+		"google-logo . oracle-logo"
+		". att-logo ."
+		"capital-one-logo . verizon-logo";
+	justify-content: center;
+	justify-items: stretch;
+	align-items: stretch;
+}
+
+.google-logo {
+	grid-row: 1;
+	grid-column: 1;
+	grid-area: google-logo;
+}
+
+.oracle-logo {
+	grid-row: 1;
+	grid-column: 3;
+	grid-area: oracle-logo;
+}
+
+.att-logo {
+	grid-area: att-logo;
+	grid-row: 2;
+	grid-column: 2;
+	height: 125px;
+	align-content: stretch;
+}
+
+.capital-one-logo {
+	grid-area: capital-one-logo;
+	grid-row: 3;
+	grid-column: 1;
+}
+
+.verizon-logo {
+	grid-area: verizon-logo;
+	grid-row: 3;
+	grid-column: 3;
+}
+
+.some-contributors {
+	color: #f90c86;
+	border-top: solid grey;
+	border-bottom: none;
+}
+
+.donate-btn {
+	width: 200px;
+	height: 75px;
+	border-radius: 3px;
+	color: white;
+	border: none;
+	background-image: linear-gradient(to top, #ff0072, #ff7cab);
+	font-size: 29px;
+	margin: 10px 0px 0px 40px;
+}
+
+span {
+	color: #ff7cab;
+}
