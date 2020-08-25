@@ -3,6 +3,11 @@
 	height: 200px;
 	background-color: #202020;
 	text-align: center;
+<<<<<<< HEAD
+	position: fixed;
+	bottom: 0;
+=======
+>>>>>>> cd31aa3a7c4e58f9a1c758ba53528ccce60a7ad7
 }
 
 .footer-text {

@@ -4,28 +4,49 @@
 
 h1 {
   border-bottom: solid grey;
+<<<<<<< HEAD
+  width: 700px;
+=======
   width: 850px;
+>>>>>>> cd31aa3a7c4e58f9a1c758ba53528ccce60a7ad7
   padding: 20px 0 20px 0;
   margin: 0 auto;
 }
 
 .events-container {
   width: 950px;
+<<<<<<< HEAD
+  margin: 0 50px 20px 100px;
+=======
   margin: 0 auto;
   /* margin: 0 200px 20px 300px; */
+>>>>>>> cd31aa3a7c4e58f9a1c758ba53528ccce60a7ad7
 }
 
 .edit-button {
   width: 81px;
+<<<<<<< HEAD
+  height: 30px;
+=======
   height: 18px;
   right: 0;
+>>>>>>> cd31aa3a7c4e58f9a1c758ba53528ccce60a7ad7
   border-radius: 2px;
   color: white;
   border: none;
   background-image: linear-gradient(to top, #ff0072, #ff7cab);
   font-size: 12px;
+<<<<<<< HEAD
+  margin: 0;
 }
 
+.title-button {
+  display: flex;
+}
+=======
+}
+
+>>>>>>> cd31aa3a7c4e58f9a1c758ba53528ccce60a7ad7
 .main-event {
   display: flex;
   margin-top: 30px;
@@ -39,7 +60,11 @@ h1 {
 .event-content h3,
 h4,
 p {
+<<<<<<< HEAD
+  margin: 9px 60px 0px 80px;
+=======
   margin: 9px 80px 0px 80px;
+>>>>>>> cd31aa3a7c4e58f9a1c758ba53528ccce60a7ad7
   text-align: left;
 }
 
@@ -58,8 +83,11 @@ p {
   font-size: 16px;
   margin-top: 25px;
 }
+<<<<<<< HEAD
+=======
 
 .title-button {
   display: flex;
   justify-content: space-between;
 }
+>>>>>>> cd31aa3a7c4e58f9a1c758ba53528ccce60a7ad7
