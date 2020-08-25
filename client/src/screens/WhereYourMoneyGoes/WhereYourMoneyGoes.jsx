@@ -1,28 +1,25 @@
-import React, { useEffect, useState } from "react";
-// import "./WhereYourMoneyGoes.css";
-import { getEvents } from "../../services/events.js";
-import Layout from "../../components/shared/Layout/Layout";
+import React, { useEffect, useState } from "react"
+import { getEvents } from "../../services/events.js"
+import { Link } from "react-router-dom"
+import Layout from "../../components/shared/Layout/Layout"
+import "./WhereYourMoneyGoes.css"
 
 const WhereYourMoneyGoes = (props) => {
-  const [events, setEvents] = useState([]);
+  const [events, setEvents] = useState([])
   useEffect(() => {
     const fetchEvents = async () => {
-      const event = await getEvents();
-      setEvents(event);
-    };
-    fetchEvents();
-  }, []);
+      const event = await getEvents()
+      setEvents(event)
+    }
+    fetchEvents()
+  }, [setEvents])
   return (
     <Layout>
-      <div>
+      <h1> Where Your Money Goes</h1>
+      <div className="events-container">
         {events.map((event) => {
           return (
-            <div>
-              {/* {if(event.imgURL.includes(".jpg")){
-                return <img src={require(`../../img/${event.imgURL})} alt="image url"/>
-              } else { 
-                return <img src={event.imgURL} alt="image url"/>
-              }} */}
+            <div className="main-event">
               <img
                 src={
                   event.imgURL.startsWith("http")
@@ -31,19 +28,29 @@ const WhereYourMoneyGoes = (props) => {
                 }
                 alt="image URL"
               />
-              <h3>{event.title}</h3>
-              <h4>
-                %{event.funds} of donations went towards funding this event
-              </h4>
-              <p>{event.content}</p>
-              <h4>"{event.quote}"</h4>
-              <h4> -{event.author},</h4>
-              <h4> {event.age}</h4>
+              <div className="event-content">
+                <div className="title-button">
+                  <h3>{event.title}</h3>
+                  <Link to={`/event/edit/${event._id}`}>
+                    <button className="edit-button">Edit</button>
+                  </Link>
+                </div>
+                <h4>
+                  {event.funds}% of donations went towards funding this event
+                </h4>
+                <p>{event.content}</p>
+                <h4 className="quote">
+                  "{event.quote}" -{event.author}, {event.age}
+                </h4>
+              </div>
             </div>
-          );
+          )
         })}
+        <Link to="/newevent">
+          <button className="add-button">Add Event</button>
+        </Link>
       </div>
     </Layout>
-  );
-};
-export default WhereYourMoneyGoes;
+  )
+}
+export default WhereYourMoneyGoes

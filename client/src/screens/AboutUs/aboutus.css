@@ -1,0 +1,21 @@
+/*about us css */
+body {
+	background-color: #202020;
+	color: white;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+h1 {
+  color: #f90c86;
+}
+span {
+	color: #ff7cab;
+	font-weight: bold;
+}
+
+.title {
+	color: #ff7cab;
+	font-weight: bold;
+}

@@ -6,7 +6,7 @@ db.on("error", console.error.bind(console, "MongoDB connection error:"));
 const main = async () => {
   const events = [
     {
-      imgURL: "../client/img/build-a-webpage-day.jpg",
+      imgURL: "build-a-webpage-day.jpg",
       title: "Build-A-Webpage Day",
       funds: 5000,
       content:
@@ -16,7 +16,7 @@ const main = async () => {
       age: 11,
     },
     {
-      imgURL: "../client/img/lovels-respect-hackathon.jpg",
+      imgURL: "lovels-respect-hackathon.jpg",
       title: "LovelsRespect Hackathon",
       funds: 3000,
       content:
@@ -26,7 +26,7 @@ const main = async () => {
       age: 14,
     },
     {
-      imgURL: "../client/img/techinnovation-bus-ride.jpg",
+      imgURL: "techinnovation-bus-ride.jpg",
       title: "Tech Innovation Bus Ride",
       funds: 8000,
       content:
@@ -36,7 +36,7 @@ const main = async () => {
       age: 13,
     },
     {
-      imgURL: "../client/img/break-the-cycle.jpg",
+      imgURL: "break-the-cycle.jpg",
       title: "Break the Cycle",
       funds: 2000,
       content:

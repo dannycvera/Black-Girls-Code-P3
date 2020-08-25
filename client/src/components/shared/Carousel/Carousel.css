@@ -1,0 +1,29 @@
+.carousel {
+  width: 950px;
+  height: 300px;
+  background-color: #ccc;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.scroller {
+  position: absolute;
+  transition: transform 350ms;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 950px;
+  height: 300px;
+  display: flex;
+  align-items: canter;
+  justify-content: center;
+  position: relative;
+  transition: opacity 350ms;
+}
+
+.scroller img {
+  object-fit: cover;
+}
