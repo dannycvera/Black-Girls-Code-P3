@@ -1,10 +1,11 @@
 // Sited code below
 // https://codesandbox.io/s/simple-react-hooks-interval-slider-forked-hzfsb?file=/src/index.js:0-1213
 
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import useSlider from "./useSlider";
 import "./Carousel.css";
+import "./CarouselMedia.css";
 
 const slides = [
   {
@@ -45,16 +46,24 @@ const slides = [
 ];
 
 function Carousel() {
-  const slideWidth = 950;
+  const parentRef = useRef(null);
+  const [slideWidth, updSlideWidth] = useState(950);
+  useEffect(() => {
+    if (parentRef.current) {
+      updSlideWidth(parentRef.current.offsetWidth);
+    }
+    // console.log(slideWidth, parentRef.current.offsetWidth);
+  }, [parentRef.current && parentRef.current.offsetWidth]);
+
   const { offset, addItem } = useSlider({
     total: slides.length,
     enabled: true,
     useLoaded: false,
-    speed: 6000,
+    speed: 3000,
   });
 
   return (
-    <div className="carousel">
+    <div className="carousel" ref={parentRef}>
       <div
         className="scroller"
         style={{
@@ -65,6 +74,7 @@ function Carousel() {
         {slides.map((slide, index) => (
           <img
             className="slide"
+            key={index}
             alt={slide.title}
             src={require(`../../../img/${slide.imgURL}`)}
           />
