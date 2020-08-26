@@ -60,7 +60,7 @@ function Home() {
               mission-aligned team of folks striving to change the world take a
               look at our careers page. <br />
               Come join the BGC family! Learn more{" "}
-              <a href='https://www.blackgirlscode.com/career-openings.html' target='_blank'><span className="pink-text">here.</span></a>{" "}
+              <a href='https://www.blackgirlscode.com/career-openings.html' target='_blank'><span className="pink-text">here</span></a>{" "}.
             </p>
           </div>
           <div className="right_text">
@@ -94,20 +94,18 @@ function Home() {
             </p>
             <p className="title">Keep In Touch</p>
             <p className="description">
-              We're on the move, but it's easy to keep in touch with BGC via <a href='https://twitter.com/blackgirlscode'><span className="pink-text">Twitter</span></a>, <a href='https://www.facebook.com/BlackGirlsCodeOrg'> <span className="pink-text"> Facebook,</span></a> and the BGC{" "}
-              <a href='https://www.blackgirlscode.com/blog' target='_blank'><span className="pink-text">blog</span></a>.
+              We're on the move, but it's easy to keep in touch with BGC via <a href='https://twitter.com/blackgirlscode'><span className="pink-text">Twitter</span></a>, <a href='https://www.facebook.com/BlackGirlsCodeOrg'> <span className="pink-text"> Facebook</span></a>, and the {" "}
+              <a href='https://www.blackgirlscode.com/blog' target='_blank'><span className="pink-text">BGC blog</span></a>.
             </p>
             <p className="description">
               Are you a girl who codes? Or know one? Shop the{" "}
-              <a href='https://blackgirlscode.bigcartel.com/' target='_blank'><span className="pink-text">BGC Store.</span></a>
+              <a href='https://blackgirlscode.bigcartel.com/' target='_blank'><span className="pink-text">BGC Store</span></a>.
             </p>
             <p className="description">
               + MEDIA: Find press releases, images, and{" "}
               <a href='https://www.blackgirlscode.com/press.html' target='_blank'><span className="pink-text">media</span> </a>tools.{" "}
             </p>
-            <p className="title">
-              <span className="pink-text">Get Involved</span>
-            </p>
+            <p className="title">Get Involved</p>
             <p className="description">
               Do you code? Are you an organizer? Photographer? Just want to help
               out as we grow and expand to new cities? Sign up to volunteer{" "}
