@@ -8,12 +8,12 @@ function Home() {
 		<Layout>
 			<div className="home">
 				<Carousel />
-				<h1 className="home_title">Welcome to Black Girls Code!</h1>
-				<h2 className="home_subtitle">Inspiring young girls of color</h2>
+				<h1 className="home-title">Welcome to Black Girls Code!</h1>
+				<h2 className="home-subtitle">Inspiring young girls of color</h2>
 				<img
 					src={require(`../../img/break-the-cycle-home.png`)}
-					className="break_the_cycle"
-					alt="break_the_cycle"
+					className="break-the-cycle"
+					alt="break-the-cycle"
 				/>
 				<p className="vision">
 					<span>Our Vision:</span> To increase the number of women of color in
@@ -24,13 +24,13 @@ function Home() {
 					occupy some of the 1.4 million computing job openings expected to be
 					available in the U.S. by 2020, and to train 1 million girls by 2040.
 				</p>
-				<div className="students_div">
+				<div className="students-div">
 					<img
 						src={require(`../../img/bgc_home_students.jpg`)}
 						className="students"
 						alt="students"
 					/>
-					<p className="student_text">
+					<p className="student-text">
 						School is out, but for our #futuretechbosses, the fun and learning
 						is just beginning! STEM from home with Black Girls CODE this summer.
 						Our #CodeTheSummer virtual camps are here to give your tech geniuses
@@ -43,20 +43,20 @@ function Home() {
 						href={"https://www.blackgirlscode.com/programsevents.html"}
 						target="_blank"
 					>
-						<button className="sign_up_button" target="_blank">
+						<button className="sign-up-button" target="_blank">
 							Sign Up
 						</button>
 					</a>
 				</div>
-				<h1 className="float_title">Join Our Team!</h1>
-				<div className="floating_div">
-					<div className="left_content">
+				<h1 className="float-title">Join Our Team!</h1>
+				<div className="floating-div">
+					<div className="left-content">
 						<img
 							src={require(`../../img/bgc_home_img.jpg`)}
-							className="blackboard_img"
-							alt="blackboard_img"
+							className="blackboard-img"
+							alt="blackboard-img"
 						/>
-						<p className="office_text">
+						<p className="office-text">
 							We're growing again in both our New York and Oakland offices. If
 							you're a kind and friendly human being looking to join a fun and
 							mission-aligned team of folks striving to change the world take a
@@ -70,7 +70,7 @@ function Home() {
 							</a>{" "}
 						</p>
 					</div>
-					<div className="right_text">
+					<div className="right-text">
 						<p className="title">Round Up Donate</p>
 						<p className="description">
 							We're still rounding up and donating our fare with #TeamLyft.{" "}
@@ -191,8 +191,8 @@ function Home() {
 						</p>
 					</div>
 				</div>
-				<div className="border_div"></div>
-				<div className="bottom_div">
+				<div className="border-div"></div>
+				<div className="bottom-div">
 					<div className="bottom-left">
 						<img
 							src={require(`../../img/bgc_home_boys.jpg`)}
