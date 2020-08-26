@@ -1,5 +1,6 @@
 # Black-Girls-Code-P3
 
+[Deployed Link](https://blackgirlscodep3.netlify.app/)
 # Overview
 Our goal is to bring to life the design layout of the Black Girls Code (BGC) website created by the GA UX team. Our SEI group will create a fully functional, redesigned frontend interface of the Home, About Us, and Events pages with an enhanced user experience and complementary elements. In addition, we will create two new pages which allow users to add and/or edit their review of BGC events. This information will be updated in real time on the Events page while being stored on backend servers.
 
