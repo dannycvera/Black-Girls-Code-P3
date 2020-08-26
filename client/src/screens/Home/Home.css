@@ -30,11 +30,13 @@ span {
 }
 
 .vision {
-	width: 950px;
-	margin: 10px 0px 10px;
-	padding: 20px 40px;
-	line-height: 24px;
-	font-size: 16px;
+
+  width: 950px;
+  margin: 10px 0px 20px 125px;
+  padding: 20px 40px;
+  line-height: 24px;
+  font-size: 16px;
+
 }
 .students {
 	width: 950px;
@@ -58,13 +60,17 @@ span {
 	margin: 10px 0px 10px;
 }
 .sign_up_button {
-	width: 81px;
-	height: 30px;
-	background-image: linear-gradient(to top, #ff0072, #ff7cab);
-	color: white;
-	border: none;
-	font-size: 12px;
-	margin-bottom: 30px;
+
+  width: 143px;
+  height: 54px;
+  background-image: linear-gradient(to top, #ff0072, #ff7cab);
+  color: white;
+  border: none;
+  font-size: 22px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 var(--black-25);
+
 }
 .float_title {
 	font-size: 48px;
@@ -133,6 +139,9 @@ span {
 
 .pink-text {
 	color: #ff7cab;
+}
+.pink-text:hover {
+  color: #f90c86;
 }
 
 .mailing-list-container {
