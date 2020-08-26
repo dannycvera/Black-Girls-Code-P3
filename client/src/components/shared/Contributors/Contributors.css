@@ -51,8 +51,6 @@
   grid-column: 3;
   object-fit: cover;
   object-fit: contain;
-  object-fit: cover;
-  object-fit: contain;
 }
 
 .some-contributors {
