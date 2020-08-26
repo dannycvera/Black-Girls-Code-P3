@@ -1,193 +1,207 @@
 body {
-  background-color: #202020;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-.home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.home-content {
-  margin: 0 auto;
-  width: 950px;
+	background-color: #202020;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
 
-.home_title {
-  color: #f90c86;
-  border: none;
-  margin-bottom: 0px;
-  padding-bottom: 5px;
-  font-size: 45px;
+.home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: "Roboto", sans-serif;
 }
-.home_subtitle {
-  margin-top: 0px;
-  letter-spacing: 1.5px;
-  font-size: 35px;
+
+.home-title {
+	color: #f90c86;
+	border: none;
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+	font-size: 45px;
 }
+
+.home-subtitle {
+	margin-top: 0px;
+	letter-spacing: 1.5px;
+	font-size: 35px;
+}
+
 span {
-  color: #ff7cab;
-  font-weight: bold;
+	color: #ff7cab;
+	font-weight: bold;
 }
 
 .vision {
-  width: 950px;
-  margin: 10px 0px 20px 125px;
-  padding: 20px 40px;
-  line-height: 24px;
-  font-size: 16px;
+	width: 950px;
+	padding: 20px 40px;
+	line-height: 24px;
+	font-size: 16px;
+	font-family: "Montserrat", sans-serif;
 }
+
 .students {
-  width: 950px;
-  border-top: 1.5px solid grey;
-  padding-top: 25px;
-}
-.student_text {
-  width: 950px;
-  margin: 10px 0px 10px 5px;
-  padding: 20px 40px;
-  line-height: 24px;
-  font-size: 16px;
-}
-.students_div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 950px;
-  border-bottom: 1.5px solid grey;
-  margin: 10px 0px 10px;
-}
-.sign_up_button {
-  width: 143px;
-  height: 54px;
-  background-image: linear-gradient(to top, #ff0072, #ff7cab);
-  color: white;
-  border: none;
-  font-size: 22px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  box-shadow: 0 4px 4px 0 var(--black-25);
-}
-.float_title {
-  font-size: 48px;
-  color: #f90c86;
-  border: none;
-}
-.floating_div {
-  margin: 10px 0 30px;
-  display: flex;
+	width: 950px;
+	height: 463px;
+	object-fit: cover;
+	border-top: 1.5px solid grey;
+	padding-top: 25px;
 }
 
-.blackboard_img {
-  width: 450px;
-  object-fit: cover;
+.student-text {
+	width: 950px;
+	margin: 10px 0px 10px 5px;
+	padding: 20px 40px;
+	line-height: 24px;
+	font-size: 16px;
+	font-family: "Montserrat", sans-serif;
 }
+
+.students-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	width: 950px;
+	border-bottom: 1.5px solid grey;
+	margin: 10px 0px 10px 10px;
+}
+.sign-up-button {
+	width: 143px;
+	height: 54px;
+	background-image: linear-gradient(to top, #ff0072, #ff7cab);
+	color: white;
+	border: none;
+	font-size: 22px;
+	margin-bottom: 30px;
+}
+.float-title {
+	font-size: 48px;
+	color: #f90c86;
+	border: none;
+}
+.floating-div {
+	margin: 10px 0 30px;
+	display: flex;
+}
+
+.blackboard-img {
+	height: 570px;
+	width: 490px;
+	object-fit: cover;
+	padding-left: 10px;
+}
+
+.break-the-cycle {
+	height: 260px;
+	width: 750px;
+}
+
 .title {
-  color: #ff7cab;
-  font-weight: bold;
-  font-size: 22px;
-  margin: 0px;
+	color: #ff7cab;
+	font-weight: bold;
+	font-size: 22px;
+	margin: 0px;
 }
 
-.right_text {
-  font-size: 13px;
-  text-align: left;
-  margin-left: 30px;
-  margin-top: -5px;
-  height: 550px;
-  width: 450px;
-  line-height: 23px;
+.right-text {
+	font-size: 13px;
+	text-align: left;
+	margin: -5px 0 0 20px;
+	height: 550px;
+	width: 450px;
+	line-height: 22px;
 }
 
 .description {
-  margin: 0px 0px 18px 0px;
-  font-size: 16px;
+	margin: 0px 0px 18px 0px;
+	font-size: 16px;
+	font-family: "Montserrat", sans-serif;
 }
 
-.left_content {
-  display: flex;
-  flex-direction: column;
-  align-content: left;
-  border-right: 1.5px solid grey;
-  width: 510px;
-}
-.office_text {
-  text-align: left;
-  margin: 20px 30px 10px 28px;
-  font-size: 36px;
-  line-height: 35px;
+.left-content {
+	display: flex;
+	flex-direction: column;
+	align-content: left;
+	border-right: 1.5px solid grey;
+	width: 510px;
 }
 
-.bottom_div {
-  display: flex;
-  padding-left: 10px;
+.office-text {
+	text-align: left;
+	margin: 30px 10px 10px 10px;
+	font-size: 33px;
+	line-height: 39px;
 }
 
-.border_div {
-  border-top: 1.5px solid grey;
+.bottom-div {
+	display: flex;
+}
+
+.border-div {
+	width: 1010px;
+	border-top: 1.5px solid grey;
+	margin-left: 55px;
 }
 
 .boys {
-  height: 18vw;
-  margin-top: 30px;
-  max-height: 300px;
+	height: 350px;
+	width: 465px;
+	margin: 30px 25px 0 0;
 }
 
 .pink-text {
-  color: #ff7cab;
-}
-.pink-text:hover {
-  color: #f90c86;
+	color: #ff7cab;
+	font-weight: bold;
 }
 
 .mailing-list-container {
-  background-color: white;
-  width: 436px;
-  height: 226px;
-  margin: 70px 0 0 38px;
+	background-color: white;
+	width: 436px;
+	height: 226px;
+	margin-top: 110px;
 }
 
 .mailing-list-text {
-  font-size: 23px;
-  color: #202020;
-  font-weight: normal;
-  padding-top: 25px;
+	font-size: 23px;
+	color: #202020;
+	font-weight: normal;
+	padding-top: 25px;
 }
 
 .subscribe-button {
-  width: 125px;
-  height: 45px;
-  border-radius: 4px;
-  box-shadow: 0 4px 4px 0 rgb(196 196 196);
-  color: white;
-  border: none;
-  background-image: linear-gradient(to top, #ff0072, #ff7cab);
-  font-size: 17px;
+	width: 125px;
+	height: 45px;
+	border-radius: 4px;
+	box-shadow: 0 4px 4px 0 rgb(196 196 196);
+	color: white;
+	border: none;
+	background-image: linear-gradient(to top, #ff0072, #ff7cab);
+	font-size: 17px;
+	font-family: "Roboto", sans-serif;
 }
 
 .subscribe-button:focus {
-  outline: none !important;
+	outline: none !important;
 }
 
 .email {
-  background-color: rgb(196 196 196);
-  width: 388px;
-  height: 42px;
-  font-size: 22px;
-  text-align: center;
-  border: none;
-  margin-top: 5px;
-  margin-bottom: 28px;
+	background-color: rgb(196 196 196);
+	width: 388px;
+	height: 42px;
+	font-size: 22px;
+	text-align: center;
+	border: none;
+	margin-top: 5px;
+	margin-bottom: 28px;
+	font-family: "Montserrat", sans-serif;
 }
 
 .bottom-left-text {
-  font-size: 24px;
-  padding-left: 5px;
-  text-align: center;
-  margin: 9px 0 0 10px;
+	font-size: 24px;
+	padding-left: 5px;
+	text-align: center;
+	margin: 9px 77px 10px 50px;
 }
