@@ -1,10 +1,10 @@
-import React from "react"
-import "./Home.css"
-import Layout from "../../components/shared/Layout/Layout"
-import Carousel from "../../components/shared/Carousel/Carousel"
+import React from "react";
+import "./Home.css";
+import Layout from "../../components/shared/Layout/Layout";
+import Carousel from "../../components/shared/Carousel/Carousel";
+import "./HomeMedia.css";
 
 function Home() {
-
   return (
     <Layout>
       <div className="home">
@@ -44,7 +44,9 @@ function Home() {
             href={"https://www.blackgirlscode.com/programsevents.html"}
             target="_blank"
           >
-            <button className="sign_up_button" target='_blank'>Sign Up</button>
+            <button className="sign_up_button" target="_blank">
+              Sign Up
+            </button>
           </a>
         </div>
         <h1 className="float_title">Join Our Team!</h1>
@@ -61,7 +63,13 @@ function Home() {
               mission-aligned team of folks striving to change the world take a
               look at our careers page. <br />
               Come join the BGC family! Learn more{" "}
-              <a href='https://www.blackgirlscode.com/career-openings.html' target='_blank'><span className="pink-text">here</span></a>{" "}.
+              <a
+                href="https://www.blackgirlscode.com/career-openings.html"
+                target="_blank"
+              >
+                <span className="pink-text">here</span>
+              </a>{" "}
+              .
             </p>
           </div>
           <div className="right_text">
@@ -70,22 +78,36 @@ function Home() {
               We're still rounding up and donating our fare with #TeamLyft.{" "}
               <br /> Find out how you can help us build the future by rounding
               up your Lyft fares.{" "}
-              <a href='http://bit.ly/LyftBGC' target='_blank'><span className="pink-text">http://bit.ly/LyftBGC</span></a>{" "}
+              <a href="http://bit.ly/LyftBGC" target="_blank">
+                <span className="pink-text">http://bit.ly/LyftBGC</span>
+              </a>{" "}
               #RoundUpDonate #FutureForward
             </p>
             <p className="title">Imagine The Impact</p>
             <p className="description">
               When we give girls of color the tools to develop their own future,
               great things are bound to happen. BGC founder Kimberly Bryant can
-              definitely relate. <a href='https://www.blackgirlscode.com/about-bgc.html' target='_blank'><span className="pink-text">Read</span></a> what
-              she has to say about girls in STEM fields.
+              definitely relate.{" "}
+              <a
+                href="https://www.blackgirlscode.com/about-bgc.html"
+                target="_blank"
+              >
+                <span className="pink-text">Read</span>
+              </a>{" "}
+              what she has to say about girls in STEM fields.
             </p>
             <p className="title">BGC Girls on the Go</p>
             <p className="description">
               Since BGC's launch in 2011, the girls of BlackGirlsCode have
               eagerly jumped into programming. Have a look at what we've done to
               support girls in STEM and{" "}
-              <a href='https://www.blackgirlscode.com/programsevents.html' target='_blank'><span className="pink-text">register</span></a> for upcoming classes!{" "}
+              <a
+                href="https://www.blackgirlscode.com/programsevents.html"
+                target="_blank"
+              >
+                <span className="pink-text">register</span>
+              </a>{" "}
+              for upcoming classes!{" "}
             </p>
             <p className="title">Help Us Grow</p>
             <p className="description">
@@ -95,33 +117,79 @@ function Home() {
             </p>
             <p className="title">Keep In Touch</p>
             <p className="description">
-              We're on the move, but it's easy to keep in touch with BGC via <a href='https://twitter.com/blackgirlscode'><span className="pink-text">Twitter</span></a>, <a href='https://www.facebook.com/BlackGirlsCodeOrg'> <span className="pink-text"> Facebook</span></a>, and the {" "}
-              <a href='https://www.blackgirlscode.com/blog' target='_blank'><span className="pink-text">BGC blog</span></a>.
+              We're on the move, but it's easy to keep in touch with BGC via{" "}
+              <a href="https://twitter.com/blackgirlscode">
+                <span className="pink-text">Twitter</span>
+              </a>
+              ,{" "}
+              <a href="https://www.facebook.com/BlackGirlsCodeOrg">
+                {" "}
+                <span className="pink-text"> Facebook</span>
+              </a>
+              , and the{" "}
+              <a href="https://www.blackgirlscode.com/blog" target="_blank">
+                <span className="pink-text">BGC blog</span>
+              </a>
+              .
             </p>
             <p className="description">
               Are you a girl who codes? Or know one? Shop the{" "}
-              <a href='https://blackgirlscode.bigcartel.com/' target='_blank'><span className="pink-text">BGC Store</span></a>.
+              <a href="https://blackgirlscode.bigcartel.com/" target="_blank">
+                <span className="pink-text">BGC Store</span>
+              </a>
+              .
             </p>
             <p className="description">
               + MEDIA: Find press releases, images, and{" "}
-              <a href='https://www.blackgirlscode.com/press.html' target='_blank'><span className="pink-text">media</span> </a>tools.{" "}
+              <a
+                href="https://www.blackgirlscode.com/press.html"
+                target="_blank"
+              >
+                <span className="pink-text">media</span>{" "}
+              </a>
+              tools.{" "}
             </p>
             <p className="title">Get Involved</p>
             <p className="description">
               Do you code? Are you an organizer? Photographer? Just want to help
               out as we grow and expand to new cities? Sign up to volunteer{" "}
-              <a href='https://www.blackgirlscode.com/volunteer-signup.html' target='_blank'><span className="pink-text">here</span></a>.
+              <a
+                href="https://www.blackgirlscode.com/volunteer-signup.html"
+                target="_blank"
+              >
+                <span className="pink-text">here</span>
+              </a>
+              .
             </p>
             <p className="description">
               Want to help us change the world? Join a local core team! See the
               core team roles,descriptions, and application{" "}
-              <a href='https://docs.google.com/document/d/1fZI7wufw_Fc1G82Dh2vrCRw0TIeVO2RGTgB4vQqKCz0/edit?pli=1' target='_blank'><span className="pink-text">here</span></a>.
+              <a
+                href="https://docs.google.com/document/d/1fZI7wufw_Fc1G82Dh2vrCRw0TIeVO2RGTgB4vQqKCz0/edit?pli=1"
+                target="_blank"
+              >
+                <span className="pink-text">here</span>
+              </a>
+              .
             </p>
             <p className="description">
-              Join our staff! Apply for job openings <a href='https://www.blackgirlscode.com/career-openings.html' target='_blank'><span className="pink-text">here</span></a>.
+              Join our staff! Apply for job openings{" "}
+              <a
+                href="https://www.blackgirlscode.com/career-openings.html"
+                target="_blank"
+              >
+                <span className="pink-text">here</span>
+              </a>
+              .
             </p>
             <p className="description">
-            <a href='https://www.blackgirlscode.com/programsevents.html' target='_blank'><span className="pink-text"> Sign up</span></a> your budding coders below for our next class!{" "}
+              <a
+                href="https://www.blackgirlscode.com/programsevents.html"
+                target="_blank"
+              >
+                <span className="pink-text"> Sign up</span>
+              </a>{" "}
+              your budding coders below for our next class!{" "}
             </p>
           </div>
         </div>
@@ -135,7 +203,13 @@ function Home() {
             />
             <p className="bottom-left-text">
               #CodeTheSummer with BGC virtual camps. <br></br>Learn more{" "}
-              <a href='https://www.blackgirlscode.com/programsevents.html' target='_blank'><span className="pink-text">HERE</span></a>!
+              <a
+                href="https://www.blackgirlscode.com/programsevents.html"
+                target="_blank"
+              >
+                <span className="pink-text">HERE</span>
+              </a>
+              !
             </p>
           </div>
           <div className="bottom-right">
@@ -152,8 +226,7 @@ function Home() {
         </div>
       </div>
     </Layout>
-  )
-
+  );
 }
 
-export default Home
+export default Home;
