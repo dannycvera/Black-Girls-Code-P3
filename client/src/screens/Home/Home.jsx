@@ -4,6 +4,7 @@ import Layout from "../../components/shared/Layout/Layout"
 import Carousel from "../../components/shared/Carousel/Carousel"
 
 function Home() {
+
   return (
     <Layout>
       <div className="home">
@@ -152,6 +153,7 @@ function Home() {
       </div>
     </Layout>
   )
+
 }
 
 export default Home
