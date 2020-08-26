@@ -15,12 +15,16 @@
   grid-row: 1;
   grid-column: 1;
   grid-area: google-logo;
+  object-fit: cover;
+  object-fit: contain;
 }
 
 .oracle-logo {
   grid-row: 1;
   grid-column: 3;
   grid-area: oracle-logo;
+  object-fit: cover;
+  object-fit: contain;
 }
 
 .att-logo {
@@ -29,18 +33,24 @@
   grid-column: 2;
   height: 100px;
   align-content: stretch;
+  object-fit: cover;
+  object-fit: contain;
 }
 
 .capital-one-logo {
   grid-area: capital-one-logo;
   grid-row: 3;
   grid-column: 1;
+  object-fit: cover;
+  object-fit: contain;
 }
 
 .verizon-logo {
   grid-area: verizon-logo;
   grid-row: 3;
   grid-column: 3;
+  object-fit: cover;
+  object-fit: contain;
 }
 
 .some-contributors {

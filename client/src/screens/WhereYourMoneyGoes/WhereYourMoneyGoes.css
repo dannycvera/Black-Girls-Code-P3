@@ -46,9 +46,11 @@
 }
 
 .main-event img {
-  height: 160px;
+  height: 140px;
   width: 240px;
   padding-left: 20px;
+
+  object-fit: cover;
 }
 
 .event-content {
