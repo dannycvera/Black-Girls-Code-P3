@@ -17,7 +17,7 @@
 	text-align: center;
 	margin: 0 auto;
 	padding: 15px 20px;
-	font-family: "Roboto", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 19px;
 	margin-bottom: 60px;
 }
@@ -46,7 +46,7 @@
 	flex-direction: column;
 	margin-top: 50px;
 	width: 550px;
-	height: 620px;
+	height: 645px;
 	margin: 0 auto;
 	background-color: white;
 	/* margin-top: 0; */
@@ -149,10 +149,13 @@
 .check-boxes {
 	width: 380px;
 	height: 120px;
-	font-family: "Montserrat", sans-serif;
-	font-size: 12px;
 	margin: 0 auto;
 	text-align: left;
+}
+
+.label-text {
+	font-family: "Montserrat", sans-serif;
+	font-size: 12px;
 }
 
 .submit-btn {

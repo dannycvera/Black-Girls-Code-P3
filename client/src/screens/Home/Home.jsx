@@ -1,8 +1,8 @@
-import React from "react";
-import "./Home.css";
-import Layout from "../../components/shared/Layout/Layout";
-import Carousel from "../../components/shared/Carousel/Carousel";
-import "./HomeMedia.css";
+import React from "react"
+import "./Home.css"
+import Layout from "../../components/shared/Layout/Layout"
+import Carousel from "../../components/shared/Carousel/Carousel"
+import "./HomeMedia.css"
 
 function Home() {
 	return (
@@ -45,7 +45,7 @@ function Home() {
 						target="_blank"
 					>
 						<button className="sign-up-button" target="_blank">
-							Sign Up
+							SIGN UP
 						</button>
 					</a>
 				</div>
@@ -226,7 +226,6 @@ function Home() {
 			</div>
 		</Layout>
 	)
-
 }
 
-export default Home;
+export default Home

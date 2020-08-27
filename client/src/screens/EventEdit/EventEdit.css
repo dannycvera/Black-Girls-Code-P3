@@ -3,12 +3,14 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	font-family: "Roboto", sans-serif;
 }
 
 .event-edit > .img-container img {
 	border: 2px solid #ff7cab;
 	border-radius: 5px;
 	margin: 20px;
+	margin-top: 50px;
 }
 .edit-form {
 	display: flex;
@@ -16,6 +18,8 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 600px;
+	margin: 60px 80px 0 0;
+	font-family: "Roboto", sans-serif;
 }
 
 .edit-form label {
@@ -25,6 +29,7 @@
 	color: #ff7cab;
 	font-size: 17px;
 	margin: 4px;
+	font-family: "Roboto", sans-serif;
 }
 
 .edit-form input,
@@ -47,16 +52,30 @@
 	width: 100%;
 	justify-content: center;
 	margin: 5px;
+	font-family: "Roboto", sans-serif;
+	margin: 60px 0 55px 75px;
 }
 
 .delete-button {
-	width: 81px;
-	height: 18px;
+	width: 90px;
+	height: 35px;
 	right: 0;
 	border-radius: 2px;
 	color: white;
 	border: none;
 	background-image: linear-gradient(to top, #ff0072, #ff7cab);
-	font-size: 12px;
+	font-size: 15px;
 	margin-left: 10px;
+	font-family: "Roboto", sans-serif;
+}
+
+.edit-button {
+	width: 90px;
+	height: 35px;
+	font-size: 15px;
+}
+
+.event-image {
+	max-width: 650px;
+	width: 500px;
 }
