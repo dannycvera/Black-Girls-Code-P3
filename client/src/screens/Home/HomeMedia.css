@@ -1,22 +1,10 @@
 @media screen and (max-width: 500px) {
-  .floating-div {
+  .floating_div {
     /* margin: 10px 0 30px; */
-    display: block;
-    flex-direction: column;
-    align-items: center;
-  }
-  .blackboard-img {
-    height: auto;
-    width: 400px;
-    object-fit: cover;
-    padding-left: 10px;
-  }
-  .bottom-div {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .home {
     display: flex;
     flex-direction: column;
@@ -101,6 +89,7 @@
     width: 350px;
     height: 226px;
     margin-top: 110px;
+
   }
 }
 

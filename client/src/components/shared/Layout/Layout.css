@@ -1,9 +1,9 @@
 .layout header {
-  display: flex;
-  justify-content: center;
-  background-color: #202020;
+	display: flex;
+	justify-content: center;
+	background-color: #202020;
 }
 
 .clear-fix {
-  clear: both;
+	clear: both;
 }
