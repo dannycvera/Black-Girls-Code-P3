@@ -1,10 +1,9 @@
 .logo {
-	width: 758px;
-	margin: 0 auto;
-	justify-content: center;
+  width: 758px;
+  margin: 0 auto;
 }
 
 .hot-zone-home {
-	width: 100% vh;
-	padding: 50px 0px 12px;
+  width: 100% vh;
+  padding: 50px 0px 12px;
 }

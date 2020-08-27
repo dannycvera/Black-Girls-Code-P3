@@ -1,16 +1,91 @@
 @media screen and (max-width: 500px) {
-  .floating_div {
+  .floating-div {
     /* margin: 10px 0 30px; */
+    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blackboard-img {
+    height: auto;
+    width: 400px;
+    object-fit: cover;
+    padding-left: 10px;
+  }
+  .bottom-div {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .home {
     display: flex;
-
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 400px;
+  }
+
+  .break-the-cycle {
+    height: auto;
+    width: 350px;
+    margin: 0 auto;
+  }
+  .students {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+    border-top: 1.5px solid grey;
+    padding-top: 25px;
+    margin: 0 auto;
+  }
+  .student-text {
+    width: 450px;
+    /* margin: 10px 0px 10px 0px;
+    padding: 20px 10px; */
+    line-height: 24px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .students-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 450px;
+    border-bottom: 1.5px solid grey;
+    margin: 10px 0px 10px 10px;
+  }
+  .vision {
+    width: 450px;
+    padding: 20px 40px;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .right-text {
+    font-size: 13px;
+    text-align: left;
+    margin: 5px 0 0 20px;
+    height: 550px;
+    width: 450px;
+    line-height: 22px;
+  }
+  .border-div {
+    width: 350px;
+    border-top: 1.5px solid grey;
+    margin-left: 55px;
+  }
+
+  .boys {
+    height: 350px;
+    width: 350px;
+    margin: 30px 25px 0 0;
+  }
+
+  .mailing-list-container {
+    background-color: white;
+    width: 350px;
+    height: 226px;
+    margin-top: 110px;
   }
 }
 
