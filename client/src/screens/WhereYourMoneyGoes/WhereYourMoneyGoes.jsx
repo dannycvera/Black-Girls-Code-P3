@@ -19,6 +19,7 @@ const WhereYourMoneyGoes = (props) => {
   return (
     <div>
       <Layout>
+        <div className='wymg'>
         <h1 className="title-wymg"> Where Your Money Goes</h1>
         <div className="events-container">
           {events.map((event) => {
@@ -56,7 +57,8 @@ const WhereYourMoneyGoes = (props) => {
         </Link>
         <div className="contributors">
           <Contributors />
-        </div>
+          </div>
+          </div>
       </Layout>
     </div>
   )
