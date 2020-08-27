@@ -1,0 +1,29 @@
+@media screen and (max-width: 500px) {
+  .carousel {
+
+    width: 100vw;
+    height: 200px;
+
+    background-color: #ccc;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .scroller {
+    position: absolute;
+    transition: transform 350ms;
+    height: 100%;
+    display: flex;
+  }
+  .slide {
+
+    width: 100vw;
+    height: 200px;
+
+    display: flex;
+    align-items: canter;
+    justify-content: center;
+    position: relative;
+    transition: opacity 350ms;
+  }
+}

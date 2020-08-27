@@ -1,0 +1,13 @@
+@media screen and (max-width: 500px) {
+  .layout header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #202020;
+  }
+
+  .clear-fix {
+    clear: none;
+  }
+}
