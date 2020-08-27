@@ -1,4 +1,16 @@
 @media screen and (max-width: 500px) {
+  .home-title {
+    color: #f90c86;
+    border: none;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    font-size: 38px;
+  }
+  .home-subtitle {
+    margin-top: 0px;
+    letter-spacing: 1.5px;
+    font-size: 25px;
+  }
   .floating-div {
     /* margin: 10px 0 30px; */
     display: flex;
