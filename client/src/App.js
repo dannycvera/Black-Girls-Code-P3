@@ -13,14 +13,14 @@ import { Route, Switch } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Switch>
+      <>
         <Route exact path="/" component={Home} />
         <Route path="/whatwedo" component={AboutUs} />
         <Route path="/donations" component={Donation} />
         <Route path="/whereyourmoneygoes" component={WhereYourMoneyGoes} />
         <Route path="/newevent" component={EventCreate} />
         <Route exact path="/event/edit/:id" component={EventEdit} />
-      </Switch>
+      </>
     </div>
   );
 }
