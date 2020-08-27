@@ -1,14 +1,13 @@
-const Event = require('../models/event')
-const database = require('../db/connection')
-database.on("error", console.error.bind(console, 'did not connect to MongoDB'))
+const Event = require("../models/event")
+const database = require("../db/connection")
+database.on("error", console.error.bind(console, "did not connect to MongoDB"))
 
 const getEvents = async (req, res) => {
   try {
     const events = await Event.find()
-      res.json(events)
+    res.json(events)
   } catch (error) {
-    console.error(error)
-    res.status(500).json({error: error.message})
+    res.status(500).json({ error: error.message })
   }
 }
 
@@ -19,10 +18,8 @@ const getEvent = async (req, res) => {
     if (newEvent) {
       return res.json(newEvent)
     }
-    res.status(404).json({ error: error.message })
   } catch (error) {
-    console.error(error)
-    res.status(500).json({error: error.message})
+    res.status(500).json({ error: error.message })
   }
 }
 
@@ -32,7 +29,7 @@ const createEvent = async (req, res) => {
     await event.save()
     res.status(201).json(event)
   } catch (error) {
-    res.status(500).json({error: error.message})
+    res.status(500).json({ error: error.message })
   }
 }
 
@@ -53,10 +50,7 @@ const deleteEvent = async (req, res) => {
   const { id } = req.params
   try {
     const deleted = await Event.findByIdAndDelete(id)
-    if (deleted) {
-      return res.status(200).send("Event deleted!")
-    }
-    throw new Error('Event not found')
+    return res.status(200).send("Event deleted!")
   } catch (error) {
     res.status(500).json({ error: error.message })
   }
