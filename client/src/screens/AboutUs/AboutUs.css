@@ -1,4 +1,8 @@
 /*about us css */
+
+.aboutus-container {
+  font-family: "Roboto", sans-serif;
+}
 body {
   background-color: #202020;
   color: white;
@@ -20,24 +24,73 @@ span {
   font-weight: bold;
 }
 
-/* .group-photo {
-    float: left;
-    height: 206px;
-    width: 347px;
-    margin: 10px;
-
+.whatwedo-container {
+  width: 950px;
+  margin: auto;
+  background-color: #202020;
+  display: flex;
+  flex-direction: row;
+  /* text-align: left; */
+  justify-content: center;
 }
-.girls-in-class-photo {
-  float: right;
-  height: 223px;
-  width: 320px;
-  margin: 10px;
-
+.whatwedo-img {
+  height: 200px;
+  width: 350px;
+  object-fit: cover;
 }
-.girl-laptop {
-  float: left;
-  height: 320px;
-  width: 223px;
-  margin: 10px;
 
-} */
+.whatwedo-text {
+  text-align: left;
+  font-size: 20px;
+  line-height: 20px;
+  width: 100%;
+  object-fit: fill;
+}
+
+.ourgoal-container {
+  width: 960px;
+  align-items: center;
+  text-align: center;
+}
+
+.ourgoal-text {
+  font-size: 34px;
+}
+.pinkify {
+  color: #f90c86;
+}
+.body-text {
+  color: #f90c86;
+}
+.measure-container {
+  width: 950px;
+  margin: auto;
+  background-color: #202020;
+  display: flex;
+  text-align: left;
+  flex-direction: row-reverse;
+}
+
+.laptop-container {
+  width: 950px;
+  margin: auto;
+  background-color: #202020;
+  display: flex;
+  flex-direction: row;
+}
+
+.hijab-container {
+  width: 950px;
+  margin: auto;
+  background-color: #202020;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.complab-container {
+  width: 950px;
+  margin: auto;
+  background-color: #202020;
+  display: flex;
+  flex-direction: row;
+}
