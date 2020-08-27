@@ -1,10 +1,10 @@
 import React, { useState } from "react"
-// import Iframe from "react-iframe"
 import "./Donation.css"
 import Layout from "../../components/shared/Layout/Layout"
 import donationGirls from "../../img/donation-page.png"
 
 function Donation() {
+
 	return (
 		<Layout>
 			<div>
@@ -108,6 +108,7 @@ function Donation() {
 			</div>
 		</Layout>
 	)
+
 }
 
 export default Donation

@@ -38,9 +38,12 @@ const EventEdit = (props) => {
     })
   }
 
-  const handleDelete = () => {
-    deleteEvent(event._id)
-    setIsEventDeleted(!isEventDeleted)
+  const handleDelete = async (e) => {
+    e.preventDefault()
+    const deleted = await deleteEvent(event._id)
+    if (deleted) {
+      setIsEventDeleted(!isEventDeleted)
+    }
   }
 
   const handleSubmit = async (e) => {
@@ -74,7 +77,7 @@ const EventEdit = (props) => {
             />
           )}
         </div>
-        <form className="edit-form" onSubmit={handleSubmit}>
+        <form className="edit-form">
           <label htmlFor="imgURL">
             ImageURL:
             <input
@@ -160,15 +163,14 @@ const EventEdit = (props) => {
             />
           </label>
           <div className="event-edit-buttons">
-            <button className="edit-button">Edit</button>
+            <button className="edit-button" onClick={handleSubmit}>
+              Edit
+            </button>
             <button className="delete-button" onClick={handleDelete}>
               Delete
             </button>
           </div>
         </form>
-      </div>
-      <div className="contributors">
-        <Contributors />
       </div>
     </Layout>
   )

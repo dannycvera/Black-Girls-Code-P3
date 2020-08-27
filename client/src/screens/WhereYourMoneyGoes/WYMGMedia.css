@@ -1,0 +1,18 @@
+@media screen and (max-width: 500px) {
+ 
+  .main-event {
+    background-color: red;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+  }
+  .title-wymg {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+  }
+}
