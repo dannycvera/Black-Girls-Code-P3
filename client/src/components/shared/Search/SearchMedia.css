@@ -16,6 +16,8 @@
   .search-div {
   }
   .search-btn {
-    margin: 10px 0px 20px 0px;
+    width: 100px;
+    height: 32px;
+    margin: 10px 80px 20px 0px;
   }
 }

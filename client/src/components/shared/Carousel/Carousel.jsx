@@ -47,12 +47,13 @@ const slides = [
 
 function Carousel() {
   const parentRef = useRef(null);
+  // used useState and ref variable to make the carousel width responsive with media queries
   const [slideWidth, updSlideWidth] = useState(950);
   useEffect(() => {
     if (parentRef.current) {
+      // updates slideWidth with current size of browser window
       updSlideWidth(parentRef.current.offsetWidth);
     }
-    // console.log(slideWidth, parentRef.current.offsetWidth);
   }, [parentRef.current && parentRef.current.offsetWidth]);
 
   const { offset, addItem } = useSlider({
@@ -63,6 +64,7 @@ function Carousel() {
   });
 
   return (
+    // parentRef reference to obtain width of carousel
     <div className="carousel" ref={parentRef}>
       <div
         className="scroller"
