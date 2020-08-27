@@ -5,6 +5,7 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  user-select: none;
 }
 
 .scroller {
