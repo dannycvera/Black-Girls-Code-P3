@@ -8,7 +8,8 @@
   padding: 20px 0 20px 0;
   margin: 0 auto;
   color: #ff0072;
-  font-family: "Roboto-Bold", "sans-serif";
+  font-family: "Roboto", "sans-serif";
+  font-weight: 700;
 }
 
 .events-container {
@@ -63,16 +64,17 @@ h4,
 p {
   margin: 9px 70px 0px 75px;
   text-align: left;
-  font-family: "Roboto-Regular", "sans-serif";
+  font-family: "Roboto", "sans-serif";
   color: white;
 }
 
 .event-content p {
-  font-family: "Montserrat-Regular", "sans-serif";
+  font-family: "Montserrat", "sans-serif";
 }
 
 .event-content h3 {
-  font-family: "Roboto-Bold", "sans-serif";
+  font-family: "Roboto", "sans-serif";
+  font-size: 700;
 }
 
 .event-content h3 {
