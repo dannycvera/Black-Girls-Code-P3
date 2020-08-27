@@ -4,7 +4,6 @@ import Layout from "../../components/shared/Layout/Layout"
 import donationGirls from "../../img/donation-page.png"
 
 function Donation() {
-
 	return (
 		<Layout>
 			<div>
@@ -66,7 +65,7 @@ function Donation() {
 										type="checkbox"
 										id="dedicate"
 									></input>
-									<label for="dedicate">
+									<label htmlFor="dedicate">
 										Dedicate my donation in honor or in memory of someone{" "}
 									</label>
 								</div>
@@ -77,7 +76,7 @@ function Donation() {
 										type="checkbox"
 										id="comment"
 									></input>
-									<label for="comment"> Write us a comment </label>
+									<label htmlFor="comment"> Write us a comment </label>
 								</div>
 
 								<div>
@@ -86,7 +85,7 @@ function Donation() {
 										type="checkbox"
 										id="display-to-dw"
 									></input>
-									<label for="display-to-dw">
+									<label htmlFor="display-to-dw">
 										Display your donation and comment on the donor wall
 									</label>
 								</div>
@@ -108,7 +107,6 @@ function Donation() {
 			</div>
 		</Layout>
 	)
-
 }
 
 export default Donation
