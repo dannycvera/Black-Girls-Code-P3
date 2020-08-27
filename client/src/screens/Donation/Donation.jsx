@@ -65,7 +65,7 @@ function Donation() {
 										type="checkbox"
 										id="dedicate"
 									></input>
-									<label htmlFor="dedicate">
+									<label className="label-text" htmlFor="dedicate">
 										Dedicate my donation in honor or in memory of someone{" "}
 									</label>
 								</div>
@@ -76,7 +76,10 @@ function Donation() {
 										type="checkbox"
 										id="comment"
 									></input>
-									<label htmlFor="comment"> Write us a comment </label>
+									<label className="label-text" htmlFor="comment">
+										{" "}
+										Write us a comment{" "}
+									</label>
 								</div>
 
 								<div>
@@ -85,7 +88,7 @@ function Donation() {
 										type="checkbox"
 										id="display-to-dw"
 									></input>
-									<label htmlFor="display-to-dw">
+									<label className="label-text" htmlFor="display-to-dw">
 										Display your donation and comment on the donor wall
 									</label>
 								</div>

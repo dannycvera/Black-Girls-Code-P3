@@ -18,7 +18,8 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 600px;
-	margin: 60px 0;
+	margin: 60px 80px 0 0;
+	font-family: "Roboto", sans-serif;
 }
 
 .edit-form label {
@@ -28,6 +29,7 @@
 	color: #ff7cab;
 	font-size: 17px;
 	margin: 4px;
+	font-family: "Roboto", sans-serif;
 }
 
 .edit-form input,
@@ -51,7 +53,7 @@
 	justify-content: center;
 	margin: 5px;
 	font-family: "Roboto", sans-serif;
-	margin-top: 60px;
+	margin: 60px 0 55px 75px;
 }
 
 .delete-button {
@@ -74,5 +76,6 @@
 }
 
 .event-image {
-	max-width: 350px;
+	max-width: 650px;
+	width: 500px;
 }
