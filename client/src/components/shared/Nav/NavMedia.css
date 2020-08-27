@@ -33,6 +33,7 @@
     font-size: 15px;
     font-family: "Roboto", sans-serif;
     text-align: left;
+    user-select: none;
     /* border: 1px solid red; */
   }
   .drop-down-list {
