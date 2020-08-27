@@ -1,65 +1,187 @@
 .donation-content {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	font-family: "Roboto", sans-serif;
 }
 
 .donation-pic {
-  width: 948px;
-  height: 341px;
-  object-fit: fill;
-  margin-bottom: 60px;
+	width: 948px;
+	height: 341px;
+	object-fit: fill;
+	margin-bottom: 60px;
 }
 
 .mission-p {
-  border: solid #ff7cab;
-  width: 750px;
-  /* text-indent: 50px; */
-  text-align: center;
-  margin: 0 auto;
-  padding: 15px 20px;
-  font-family: "Roboto", sans-serif;
-  font-size: 19px;
-  margin-bottom: 60px;
+	border: solid #ff7cab;
+	width: 750px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 15px 20px;
+	font-family: "Roboto", sans-serif;
+	font-size: 19px;
+	margin-bottom: 60px;
 }
 
 .charity {
-  height: 90px;
-  width: 420px;
-  font-size: 12px;
-  text-align: center;
-  margin: 0 auto;
-  font-family: "Montserrat", sans-serif;
+	height: 90px;
+	width: 420px;
+	font-size: 12px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 30px;
+	font-family: "Montserrat", sans-serif;
 }
 
 .donor-wall-container {
-  width: 820px;
+	width: 820px;
 }
 
 .donor-text {
-  color: #ff7cab;
+	color: #ff7cab;
+	text-align: left;
 }
 
-.form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 50px;
-  width: 550px;
-  height: 600px;
-  margin: 0 auto;
-  background-color: white;
-  margin-top: 0;
+.donate-form-container {
+	align-items: center;
+	flex-direction: column;
+	margin-top: 50px;
+	width: 550px;
+	height: 620px;
+	margin: 0 auto;
+	background-color: white;
+	/* margin-top: 0; */
 }
 
 .form-header {
-  background-color: #ff7cab;
-  width: 100%;
-  height: 50px;
-  padding-top: 5px;
-  margin-top: -270px;
+	background-color: #ff7cab;
+	height: 60px;
+	padding-top: 15px;
+	font-size: 30px;
+	text-align: center;
+	margin: 0;
 }
 
 .check-boxes {
-  color: black;
+	color: black;
+}
+
+.time-btn {
+	background-color: #ff7cab;
+	border: 1px solid #f90c86;
+	width: 86px;
+	height: 30px;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	outline: none;
+}
+
+.time-btn:active,
+.time-btn:focus {
+	background-color: #ff0072;
+}
+
+.money-btn {
+	border: 3px solid #8e8d8d;
+	width: 104px;
+	height: 83px;
+	font-size: 24px;
+	margin: 0 8px;
+	background-color: white;
+	outline: none;
+}
+
+.money-btn:active,
+.money-btn:focus {
+	border-color: #ff0072;
+}
+
+.btn-group-one,
+.btn-group-two {
+	margin-top: 20px;
+}
+
+.amount {
+	width: 175px;
+	height: 31px;
+	margin-top: 20px;
+	font-family: "Montserrat", sans-serif;
+	border-color: black;
+}
+
+.company-name {
+	width: 344px;
+	height: 31px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.employer-match-text,
+.co-match-name {
+	font-size: 16px;
+	color: #828282;
+}
+
+.employer-match-text {
+	margin-right: 180px;
+	margin-bottom: 5px;
+}
+
+.match-text {
+	color: #202020;
+	font-size: 12px;
+	width: 308px;
+	margin: 0 auto;
+	margin-top: 9px;
+	font-weight: lighter;
+}
+
+.match-border {
+	border: 1px solid #8e8d8d;
+	width: 390px;
+	height: 110px;
+	margin: 0 auto;
+}
+
+.co-match-name {
+	margin: 5px 160px 5px 0;
+	font-weight: lighter;
+}
+
+.check-boxes {
+	width: 380px;
+	height: 120px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 12px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.submit-btn {
+	width: 220px;
+	height: 70px;
+	border-radius: 4px;
+	color: white;
+	border: none;
+	background-image: linear-gradient(to top, #ff0072, #ff7cab);
+	font-size: 32px;
+}
+
+.checkbox {
+	margin: 15px 15px 0 0;
+}
+
+input[type="checkbox"] {
+	transform: scale(2);
+}
+
+/* input[type="checkbox"]:active,
+input[type="checkbox"]:focus {
+	background-color: #ff0072;
+} */
+
+.amount::placeholder {
+	padding-left: 10px;
+}
+
+.company-name::placeholder {
+	padding-left: 10px;
 }
