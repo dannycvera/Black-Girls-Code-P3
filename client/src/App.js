@@ -11,24 +11,22 @@ import "./App.css"
 import { Route, Switch } from "react-router-dom"
 
 function App() {
-	return (
-		<div className="App">
-			<Switch>
-				{<Route exact path="/" component={Home} />}
-				{<Route exact path="/whatwedo" component={AboutUs} />}
-				{
-					<Route
-						exact
-						path="/whereyourmoneygoes"
-						component={WhereYourMoneyGoes}
-					/>
-				}
-				{<Route exact path="/newevent" component={EventCreate} />}
-				{<Route exact path="/event/edit/:id" component={EventEdit} />}
-				{<Route exact path="/donations" component={Donation} />}
-			</Switch>
-		</div>
-	)
+  return (
+    <div className="App">
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/whatwedo" component={AboutUs} />
+        <Route exact path="/donations" component={Donation} />
+        <Route
+          exact
+          path="/whereyourmoneygoes"
+          component={WhereYourMoneyGoes}
+        />
+        <Route exact path="/newevent" component={EventCreate} />
+        <Route exact path="/event/edit/:id" component={EventEdit} />
+      </Switch>
+    </div>
+  )
 }
 
 export default App
