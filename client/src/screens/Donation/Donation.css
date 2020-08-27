@@ -1,60 +1,65 @@
 .donation-content {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .donation-pic {
-	width: 948px;
-	height: 341px;
-	object-fit: fill;
-	margin-bottom: 60px;
+  width: 948px;
+  height: 341px;
+  object-fit: fill;
+  margin-bottom: 60px;
 }
 
 .mission-p {
-	border: solid #ff7cab;
-	width: 750px;
-	/* text-indent: 50px; */
-	text-align: center;
-	margin: 0 auto;
-	padding: 15px 20px;
-	font-family: "Roboto", sans-serif;
-	font-size: 19px;
-	margin-bottom: 60px;
+  border: solid #ff7cab;
+  width: 750px;
+  /* text-indent: 50px; */
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  margin-bottom: 60px;
 }
 
 .charity {
-	height: 90px;
-	width: 420px;
-	font-size: 12px;
-	text-align: center;
-	margin: 0 auto;
-	font-family: "Montserrat", sans-serif;
+  height: 90px;
+  width: 420px;
+  font-size: 12px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
 }
 
 .donor-wall-container {
-	width: 820px;
+  width: 820px;
 }
 
 .donor-text {
-	color: #ff7cab;
+  color: #ff7cab;
 }
 
 .form-container {
-	width: 550px;
-	height: 600px;
-	margin: 0 auto;
-	background-color: white;
-	margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 550px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 0;
 }
 
 .form-header {
-	background-color: #ff7cab;
-	width: 100%;
-	height: 50px;
-	padding-top: 5px;
-	margin-top: -270px;
+  background-color: #ff7cab;
+  width: 100%;
+  height: 50px;
+  padding-top: 5px;
+  margin-top: -270px;
 }
 
 .check-boxes {
-	color: black;
+  color: black;
 }
