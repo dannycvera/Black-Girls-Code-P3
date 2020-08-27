@@ -1,0 +1,21 @@
+@media screen and (max-width: 500px) {
+  .search {
+    display: none;
+  }
+  .search-social {
+    display: none;
+  }
+  .search-div {
+    display: block;
+  }
+  .search-container {
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .search-div {
+  }
+  .search-btn {
+    margin: 10px 0px 20px 0px;
+  }
+}
