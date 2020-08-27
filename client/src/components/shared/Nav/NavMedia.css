@@ -63,8 +63,8 @@
   }
   .nav-icon {
     margin-right: 50px;
-    height: 28px;
-    width: 35px;
+    height: 34px;
+    width: 44px;
     border: 0.5px solid white;
     border-radius: 6px;
     padding: 2px 5px 2px 5px;
@@ -79,7 +79,7 @@
     border-radius: 3px;
     content: "";
     height: 2px;
-    margin: 4px 0;
+    margin: 5px 0;
     transition: all 0.2s ease-in-out;
   }
   /* .nav-icon:hover:before { */
