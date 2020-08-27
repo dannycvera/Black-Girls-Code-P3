@@ -1,9 +1,43 @@
 @media screen and (max-width: 500px) {
-  .floating_div {
+  .floating-div {
     /* margin: 10px 0 30px; */
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .right-text {
+    font-size: 13px;
+    text-align: left;
+    margin: 0 0 0 0;
+    height: 550px;
+    width: 95vw;
+    line-height: 22px;
+    font-family: "Roboto", sans-serif;
+  }
+  .description {
+    margin: 0px 0px 18px 0px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .left-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-right: none;
+    width: 100vw;
+  }
+  .bottom-div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blackboard-img {
+    height: auto;
+    width: 400px;
+    object-fit: cover;
+    padding-left: 10px;
   }
   .home {
     display: flex;
@@ -50,21 +84,7 @@
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
   }
-  .right-text {
-    font-size: 13px;
-    text-align: left;
-    margin: 5px 0 0 20px;
-    height: 550px;
-    width: 450px;
-    line-height: 22px;
-  }
-  .left-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-right: none;
-    width: 450px;
-  }
+
   .office-text {
     text-align: left;
     margin: 30px 10px 10px 10px;
@@ -89,7 +109,17 @@
     width: 350px;
     height: 226px;
     margin-top: 110px;
-
+  }
+  .email {
+    background-color: rgb(196 196 196);
+    width: 300px;
+    height: 42px;
+    font-size: 22px;
+    text-align: center;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 28px;
+    font-family: "Montserrat", sans-serif;
   }
 }
 

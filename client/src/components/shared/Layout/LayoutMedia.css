@@ -1,12 +1,13 @@
 @media screen and (max-width: 500px) {
-  /* .layout {
+  .layout header {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+
+    background-color: #202020;
   }
 
-  .layout-children {
-    display: flex;
-    justify-content: center;
-  } */
+  .clear-fix {
+    clear: none;
+  }
 }
