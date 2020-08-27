@@ -167,9 +167,6 @@ const EventEdit = (props) => {
           </div>
         </form>
       </div>
-      <div className="contributors">
-        <Contributors />
-      </div>
     </Layout>
   )
 }

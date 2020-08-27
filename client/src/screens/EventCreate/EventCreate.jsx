@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import "./EventCreate.css";
-import Layout from "../../components/shared/Layout/Layout";
-import { Redirect } from "react-router-dom";
-import { createEvent } from "../../services/events";
-import Contributors from "../../components/shared/Contributors/Contributors";
+import React, { useState } from "react"
+import "./EventCreate.css"
+import Layout from "../../components/shared/Layout/Layout"
+import { Redirect } from "react-router-dom"
+import { createEvent } from "../../services/events"
+import Contributors from "../../components/shared/Contributors/Contributors"
 
 const EventCreate = (props) => {
   const [event, setEvent] = useState({
@@ -14,26 +14,26 @@ const EventCreate = (props) => {
     quote: "",
     author: "",
     age: "",
-  });
+  })
 
-  const [isCreated, setCreated] = useState(false);
+  const [isCreated, setCreated] = useState(false)
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target
     setEvent({
       ...event,
       [name]: value,
-    });
-  };
+    })
+  }
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    const created = await createEvent(event);
-    setCreated({ created });
-  };
+    e.preventDefault()
+    const created = await createEvent(event)
+    setCreated({ created })
+  }
 
   if (isCreated) {
-    return <Redirect to={`/whereyourmoneygoes`} />;
+    return <Redirect to={`/whereyourmoneygoes`} />
   }
   return (
     <Layout user={props.user}>
@@ -123,11 +123,8 @@ const EventCreate = (props) => {
           </button>
         </form>
       </div>
-      <div className="contributors">
-        <Contributors />
-      </div>
     </Layout>
-  );
-};
+  )
+}
 
-export default EventCreate;
+export default EventCreate
