@@ -1,7 +1,9 @@
 @media screen and (max-width: 500px) {
   .carousel {
-    width: 950px;
-    height: 300px;
+
+    width: 100vw;
+    height: 200px;
+
     background-color: #ccc;
     margin: 0 auto;
     position: relative;
@@ -14,8 +16,10 @@
     display: flex;
   }
   .slide {
-    width: 950px;
-    height: 300px;
+
+    width: 100vw;
+    height: 200px;
+
     display: flex;
     align-items: canter;
     justify-content: center;
