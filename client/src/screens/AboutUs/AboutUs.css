@@ -1,139 +1,142 @@
 .aboutus-container {
-	font-family: "Roboto", sans-serif;
-	width: 950px;
-	margin: 0 auto;
-	margin-bottom: 200px;
+  font-family: "Roboto", sans-serif;
+  width: 950px;
+  margin: 0 auto;
+  margin-bottom: 200px;
 }
 
 span {
-	color: #ff7cab;
-	font-weight: bold;
+  color: #ff7cab;
+  font-weight: bold;
 }
 
 .title {
-	color: #ff7cab;
-	font-weight: bold;
+  color: #ff7cab;
+  font-weight: bold;
 }
 
 .whatwedo-container {
-	width: 950px;
-	margin-top: 27px;
-	background-color: #202020;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+  width: 950px;
+  margin-top: 27px;
+  background-color: #202020;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .whatwedo-img {
-	height: 206px;
-	width: 347px;
-	object-fit: cover;
+  height: 206px;
+  width: 347px;
+  object-fit: cover;
+  object-fit: contain;
 }
 
 .whatwedo-text {
-	margin: 0;
-	text-align: left;
-	font-size: 19px;
-	line-height: 40px;
-	width: 100%;
-	object-fit: fill;
+  margin: 0;
+  text-align: left;
+  font-size: 19px;
+  line-height: 40px;
+  width: 100%;
+  object-fit: fill;
 }
 
 .ourgoal-container {
-	width: 960px;
-	align-items: center;
-	text-align: center;
-	margin: 0;
-	padding: 0;
+  width: 960px;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .ourgoal-text {
-	font-size: 30px;
-	border-bottom: 1.5px solid grey;
-	padding-bottom: 40px;
+  font-size: 30px;
+  border-bottom: 1.5px solid grey;
+  padding-bottom: 40px;
 }
 .pinkify1 {
-	color: #f90c86;
-	border-bottom: 1.5px solid grey;
-	font-size: 35px;
-	padding-bottom: 20px;
-	margin: 20px 0 0 0;
+  color: #f90c86;
+  border-bottom: 1.5px solid grey;
+  font-size: 35px;
+  padding-bottom: 20px;
+  margin: 20px 0 0 0;
 }
 .pinkify2 {
-	color: #f90c86;
-	border-top: 1.5px solid grey;
-	font-size: 35px;
-	padding: 40px 0px 0px 0px;
+  color: #f90c86;
+  border-top: 1.5px solid grey;
+  font-size: 35px;
+  padding: 40px 0px 0px 0px;
 }
 
 .impactrose {
-	color: #ff7cab;
-	margin-right: 360px;
-	font-size: 35.5px;
+  color: #ff7cab;
+  margin-right: 360px;
+  font-size: 35.5px;
 }
 
 .body-text p {
-	font-family: "Montserrat-Regular", "sans-serif";
+  font-family: "Montserrat-Regular", "sans-serif";
 }
 
 .measure-container {
-	width: 950px;
-	margin-bottom: 25px;
-	background-color: #202020;
-	display: flex;
-	text-align: left;
-	flex-direction: row-reverse;
+  width: 950px;
+  margin-bottom: 25px;
+  background-color: #202020;
+  display: flex;
+  text-align: left;
+  flex-direction: row-reverse;
 }
 
 .measure-container p {
-	margin: 0px 30px;
+  margin: 0px 30px;
 }
 
 .measure-container img {
-	margin-right: 30px;
+  margin-right: 30px;
 }
 
 .laptop-container {
-	background-color: #202020;
-	display: flex;
-	flex-direction: row;
-	margin: 0px 19px 25px 30px;
+  background-color: #202020;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 19px 25px 30px;
 }
 .laptop-content p {
-	margin: 0.5px 19px 0px 30px;
+  margin: 0.5px 19px 0px 30px;
 }
 
 .hijab-container {
-	width: 950px;
-	margin-bottom: 25px;
-	background-color: #202020;
-	display: flex;
-	flex-direction: row;
+  width: 950px;
+  margin-bottom: 25px;
+  background-color: #202020;
+  display: flex;
+  flex-direction: row;
 }
 .hijab-content {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .hijab-content p {
-	margin: 0px 30px;
+  margin: 0px 30px;
 }
 
 .hijab-container img {
-	margin-right: 30px;
+  margin-right: 30px;
 }
 
 .complab-container {
-	width: 950px;
-	background-color: #202020;
-	display: flex;
-	flex-direction: row;
-	margin-left: 30px;
+  width: 950px;
+  background-color: #202020;
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
 }
 
 .complab-content p {
-	margin: 0px 60px 0px 25px;
+  margin: 0px 60px 0px 25px;
 }
 
 .auimage {
-	height: 175px;
-	width: 250px;
+  height: 175px;
+  width: 250px;
+  object-fit: cover;
+  object-fit: contain;
 }
