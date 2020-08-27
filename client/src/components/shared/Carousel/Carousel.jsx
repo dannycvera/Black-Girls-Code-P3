@@ -47,7 +47,7 @@ const slides = [
 
 function Carousel() {
   const parentRef = useRef(null);
-  const [slideWidth, updSlideWidth] = useState(400);
+  const [slideWidth, updSlideWidth] = useState(950);
   useEffect(() => {
     if (parentRef.current) {
       updSlideWidth(parentRef.current.offsetWidth);
