@@ -4,12 +4,16 @@
     border: none;
     margin-bottom: 0px;
     padding-bottom: 5px;
-    font-size: 38px;
+    font-size: 30px;
+    user-select: none;
+    width: 300px;
   }
   .home-subtitle {
     margin-top: 0px;
     letter-spacing: 1.5px;
-    font-size: 25px;
+    font-size: 20px;
+    user-select: none;
+    font-family: "Montserrat", sans-serif;
   }
   .floating-div {
     /* margin: 10px 0 30px; */

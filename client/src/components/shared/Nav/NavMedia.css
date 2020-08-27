@@ -1,6 +1,97 @@
 @media screen and (max-width: 500px) {
-  .nav {
+  /* .nav {
     display: none;
     width: 100vw;
+  } */
+  /* nav {
+    display: none;
+  } */
+
+  .links {
+    position: absolute;
+    display: none;
+    width: 1vw;
+    flex-direction: column;
+    align-items: flex-start;
+
+    justify-content: center;
+    width: auto;
+    height: auto;
+    /* line-height: 30px; */
+    background-color: black;
+    font-size: 11px;
+    padding: 10px 10px;
+    z-index: 4;
+    margin-top: 20px;
+  }
+  .link {
+    width: 150px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 0 10px 0;
+    color: white;
+    white-space: nowrap;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    user-select: none;
+    /* border: 1px solid red; */
+  }
+  .drop-down-list {
+    margin: 0 0 0 0;
+    min-width: 150px;
+    text-align: left;
+  }
+  .drop-down-list .drop-down {
+    transition: 0.2s linear;
+    background-color: black;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    list-style: none;
+    text-decoration: none;
+    padding: 6px 6px;
+    position: absolute;
+    z-index: 3;
+    margin: -40px 0 0 120px;
+    /* margin: 0 0 0 150px; */
+    min-width: 150px;
+  }
+
+  .show {
+    width: 170px;
+    display: flex;
+  }
+  .nav-icon {
+    margin-right: 50px;
+    height: 34px;
+    width: 44px;
+    border: 0.5px solid white;
+    border-radius: 6px;
+    padding: 2px 5px 2px 5px;
+    cursor: pointer;
+  }
+  /* .nav-icon:after,
+  .nav-icon:before, */
+  .cross div,
+  .nav-icon div {
+    display: block;
+    background-color: #ff7cab;
+    border-radius: 3px;
+    content: "";
+    height: 2px;
+    margin: 5px 0;
+    transition: all 0.2s ease-in-out;
+  }
+  /* .nav-icon:hover:before { */
+  .cross > :first-child {
+    transform: translateY(12px) rotate(135deg);
+  }
+  /* .nav-icon:hover:after { */
+  .cross > :last-child {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+  /* .nav-icon:hover div { */
+  .cross > :nth-child(2) {
+    transform: scale(0);
   }
 }

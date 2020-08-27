@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-// import Iframe from "react-iframe"
 import "./Donation.css"
 import Layout from "../../components/shared/Layout/Layout"
 import donationGirls from "../../img/donation-page.png"
@@ -22,19 +21,19 @@ function Donation() {
 						creators by introducing them to skills in computer programming and
 						technology.
 					</p>
-					<div className="form-container">
+					<div className="donate-form-container">
 						<h1 className="form-header">Choose Donation Amount</h1>
-						<div className="btn-group-1">
-							<button>One-Time</button>
-							<button>Monthly</button>
-							<button>Quarterly</button>
-							<button>Annually</button>
+						<div className="btn-group-one">
+							<button className="time-btn">One-Time</button>
+							<button className="time-btn">Monthly</button>
+							<button className="time-btn">Quarterly</button>
+							<button className="time-btn">Annually</button>
 						</div>
-						<div className="btn-group-2">
-							<button>$25</button>
-							<button>$50</button>
-							<button>$100</button>
-							<button>$250</button>
+						<div className="btn-group-two">
+							<button className="money-btn">$25</button>
+							<button className="money-btn">$50</button>
+							<button className="money-btn">$100</button>
+							<button className="money-btn">$250</button>
 						</div>
 						<form>
 							<input
@@ -43,32 +42,59 @@ function Donation() {
 								placeholder="$ Enter amount"
 							></input>
 							<div className="matching">
-								<h3>Employer Donation Matching</h3>
-								<input
-									type="text"
-									className="company-name"
-									placeholder="Search company name..."
-								></input>
-								<h3>
-									Type in your employer's name to find out if they can match
-									your donations
+								<h3 className="employer-match-text">
+									Employer Donation Matching
 								</h3>
+								<div className="match-border">
+									<h3 className="co-match-name">Matching Company Name</h3>
+									<input
+										type="text"
+										className="company-name"
+										placeholder="Search company name..."
+									></input>
+									<h3 className="match-text">
+										Type in your employer's name to find out if they can match
+										your donations
+									</h3>
+								</div>
 							</div>
 							<div className="check-boxes">
-								<label for="dedicate">
-									Dedicate my donation in honor or in memory of someone{" "}
-								</label>
-								<input type="checkbox" name="dedicate"></input>
-								<label for="comment"> Write us a comment </label>
-								<input type="checkbox" name="comment"></input>
-								<label for="display-to-dw">
-									{" "}
-									Display your donation and comment on the donor wall
-								</label>
-								<input type="checkbox" name="display-to-dw"></input>
+								<div>
+									<input
+										className="checkbox"
+										type="checkbox"
+										id="dedicate"
+									></input>
+									<label className="label-text" htmlFor="dedicate">
+										Dedicate my donation in honor or in memory of someone{" "}
+									</label>
+								</div>
+
+								<div>
+									<input
+										className="checkbox"
+										type="checkbox"
+										id="comment"
+									></input>
+									<label className="label-text" htmlFor="comment">
+										{" "}
+										Write us a comment{" "}
+									</label>
+								</div>
+
+								<div>
+									<input
+										className="checkbox"
+										type="checkbox"
+										id="display-to-dw"
+									></input>
+									<label className="label-text" htmlFor="display-to-dw">
+										Display your donation and comment on the donor wall
+									</label>
+								</div>
 							</div>
 						</form>
-						<button>Submit</button>
+						<button className="submit-btn">SUBMIT</button>
 					</div>
 					<div className="charity-container">
 						<p className="charity">

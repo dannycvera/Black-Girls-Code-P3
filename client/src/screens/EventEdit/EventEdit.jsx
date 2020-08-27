@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react"
-import Layout from "../../components/shared/Layout/Layout"
-import { useParams, Redirect } from "react-router-dom"
-import { getEvent, updateEvent, deleteEvent } from "../../services/events.js"
-import Contributors from "../../components/shared/Contributors/Contributors"
+import React, { useState, useEffect } from "react";
+import Layout from "../../components/shared/Layout/Layout";
+import { useParams, Redirect } from "react-router-dom";
+import { getEvent, updateEvent, deleteEvent } from "../../services/events.js";
+import Contributors from "../../components/shared/Contributors/Contributors";
 
-import "./EventEdit.css"
+import "./EventEdit.css";
 
 const EventEdit = (props) => {
   const [event, setEvent] = useState({
@@ -15,47 +15,56 @@ const EventEdit = (props) => {
     quote: "",
     author: "",
     age: 0,
-  })
+  });
 
-  const [isUpdated, setIsUpdated] = useState(false)
-  const [isEventDeleted, setIsEventDeleted] = useState(false)
-
-  let { id } = useParams()
+  const [isUpdated, setIsUpdated] = useState(false);
+  const [isEventDeleted, setIsEventDeleted] = useState(false);
+  const [imagePath, updImagePath] = useState("");
+  let { id } = useParams();
 
   useEffect(() => {
     const fetchEvent = async () => {
-      const event = await getEvent(id)
-      setEvent(event)
+      const event = await getEvent(id);
+      setEvent(event);
+    };
+    fetchEvent();
+  }, [id]);
+  useEffect(() => {
+    try {
+      updImagePath(require(`../../img/${event.imgURL}`));
+    } catch (err) {
+      updImagePath(require("../../img/noimg.jpg"));
     }
-    fetchEvent()
-  }, [id])
-
+  }, [event]);
   const handleChange = (e) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
     setEvent({
       ...event,
       [name]: value,
-    })
-  }
+    });
+  };
 
-  const handleDelete = () => {
-    deleteEvent(event._id)
-    setIsEventDeleted(!isEventDeleted)
-  }
+  const handleDelete = async (e) => {
+    e.preventDefault();
+    const deleted = await deleteEvent(event._id);
+    if (deleted) {
+      setIsEventDeleted(!isEventDeleted);
+    }
+  };
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    let { id } = props.match.params
-    const updatedEvent = await updateEvent(id, event)
-    setIsUpdated(updatedEvent)
-  }
+    e.preventDefault();
+    let { id } = props.match.params;
+    const updatedEvent = await updateEvent(id, event);
+    setIsUpdated(updatedEvent);
+  };
 
   if (isUpdated) {
-    return <Redirect to={"/whereyourmoneygoes"} />
+    return <Redirect to={"/whereyourmoneygoes"} />;
   }
 
   if (isEventDeleted) {
-    return <Redirect to={"/whereyourmoneygoes"} />
+    return <Redirect to={"/whereyourmoneygoes"} />;
   }
 
   return (
@@ -65,16 +74,12 @@ const EventEdit = (props) => {
           {event.imgURL.length > 0 && (
             <img
               className="event-image"
-              src={
-                event.imgURL.startsWith("http")
-                  ? event.imgURL
-                  : require(`../../img/${event.imgURL}`)
-              }
+              src={event.imgURL.startsWith("http") ? event.imgURL : imagePath}
               alt={event.title}
             />
           )}
         </div>
-        <form className="edit-form" onSubmit={handleSubmit}>
+        <form className="edit-form">
           <label htmlFor="imgURL">
             ImageURL:
             <input
@@ -160,18 +165,17 @@ const EventEdit = (props) => {
             />
           </label>
           <div className="event-edit-buttons">
-            <button className="edit-button">Edit</button>
+            <button className="edit-button" onClick={handleSubmit}>
+              EDIT
+            </button>
             <button className="delete-button" onClick={handleDelete}>
-              Delete
+              DELETE
             </button>
           </div>
         </form>
       </div>
-      <div className="contributors">
-        <Contributors />
-      </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default EventEdit
+export default EventEdit;
