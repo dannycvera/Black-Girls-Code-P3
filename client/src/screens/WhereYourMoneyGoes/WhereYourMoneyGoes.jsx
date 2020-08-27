@@ -14,7 +14,8 @@ const WhereYourMoneyGoes = (props) => {
       setEvents(event)
     }
     fetchEvents()
-  }, [setEvents])
+  }, [])
+
   return (
     <div>
       <Layout>
@@ -22,7 +23,7 @@ const WhereYourMoneyGoes = (props) => {
         <div className="events-container">
           {events.map((event) => {
             return (
-              <div className="main-event">
+              <div className="main-event" key={event._id}>
                 <img
                   src={
                     event.imgURL.startsWith("http")

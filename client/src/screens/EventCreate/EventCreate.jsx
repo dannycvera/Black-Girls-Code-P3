@@ -9,7 +9,7 @@ const EventCreate = (props) => {
   const [event, setEvent] = useState({
     imgURL: "",
     title: "",
-    percentage: "",
+    funds: "",
     content: "",
     quote: "",
     author: "",
@@ -67,6 +67,7 @@ const EventCreate = (props) => {
               className="input-funds"
               placeholder="Percentage"
               value={event.funds}
+              type="text"
               name="funds"
               required
               onChange={handleChange}
