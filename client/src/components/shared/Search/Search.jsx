@@ -4,6 +4,7 @@ import "./SearchMedia.css";
 import fb from "../../../img/blk-fb-icon.png";
 import twitter from "../../../img/blk-twitter-icon.png";
 import linkedin from "../../../img/blk-linkedin-icon.png";
+import { NavLink } from "react-router-dom";
 
 export default function Search() {
   return (
@@ -28,7 +29,9 @@ export default function Search() {
       </div>
       <div className="search-container">
         <input type="text" className="search" placeholder="Search"></input>
-        <button className="search-btn">DONATE</button>
+        <NavLink to="/donations">
+          <button className="search-btn">DONATE</button>
+        </NavLink>
       </div>
     </div>
   );
