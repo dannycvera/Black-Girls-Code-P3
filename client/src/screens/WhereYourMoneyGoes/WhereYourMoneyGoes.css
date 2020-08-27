@@ -7,12 +7,14 @@
   width: 950px;
   padding: 20px 0 20px 0;
   margin: 0 auto;
+  color: #ff0072;
+  font-family: "Roboto-Bold", "sans-serif";
 }
 
 .events-container {
   width: 950px;
   margin: 0 auto;
-  max-height: 800px;
+  max-height: 770px;
   overflow-y: scroll;
 }
 
@@ -22,7 +24,7 @@
 }
 
 .events-container::-webkit-scrollbar-thumb {
-  border-radius: 3px;
+  border-radius: 5px;
   border: 1px solid #000000;
   background-color: #ff7cab;
   height: 5px;
@@ -35,7 +37,7 @@
   border-radius: 2px;
   color: white;
   border: none;
-  margin-right: 5px;
+  margin-right: 8px;
   background-image: linear-gradient(to top, #ff0072, #ff7cab);
   font-size: 12px;
 }
@@ -46,10 +48,9 @@
 }
 
 .main-event img {
-  height: 140px;
-  width: 240px;
+  height: 160px;
+  width: 270px;
   padding-left: 20px;
-
   object-fit: cover;
 }
 
@@ -62,10 +63,16 @@ h4,
 p {
   margin: 9px 70px 0px 75px;
   text-align: left;
+  font-family: "Roboto-Regular", "sans-serif";
   color: white;
 }
 
 .event-content p {
+  font-family: "Montserrat-Regular", "sans-serif";
+}
+
+.event-content h3 {
+  font-family: "Roboto-Bold", "sans-serif";
 }
 
 .event-content h3 {
