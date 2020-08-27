@@ -6,6 +6,9 @@ import { NavLink } from "react-router-dom";
 function Nav() {
   return (
     <nav>
+      <div class="nav-icon">
+        <div></div>
+      </div>
       <div className="nav">
         <div className="links">
           <NavLink className="link" to="/">

@@ -36,6 +36,8 @@ a:visited {
   padding: 10px 12px;
   color: white;
   white-space: nowrap;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
   /* border: 1px solid red; */
 }
 
@@ -46,7 +48,8 @@ a:visited {
   visibility: collapse;
   transition: 0.2s linear;
   background-color: black;
-
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
   text-align: left;
   list-style: none;
   text-decoration: none;
