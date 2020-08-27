@@ -16,3 +16,7 @@
 	transform-origin: center bottom 0px;
 	transform: matrix(1, 0, 0, 1, 0, 0);
 }
+
+.btnDown {
+	transform: matrix(0.95, 0, 0, 0.95, 0, 0);
+}
