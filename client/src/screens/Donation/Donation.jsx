@@ -1,7 +1,11 @@
 import React, { useState } from "react"
 import "./Donation.css"
 import Layout from "../../components/shared/Layout/Layout"
+
+import Button from "../../components/shared/Button/Button"
+
 import donationGirls from "../../img/donation-page-large.jpg"
+
 
 function Donation() {
   return (
@@ -82,7 +86,6 @@ function Donation() {
                     Write us a comment{" "}
                   </label>
                 </div>
-
                 <div>
                   <input
                     className="checkbox"
@@ -95,7 +98,7 @@ function Donation() {
                 </div>
               </div>
             </form>
-            <button className="submit-btn">SUBMIT</button>
+            <Button content="SUBMIT" sizeClassName="large-submit" />
           </div>
           <div className="charity-container">
             <p className="charity">
@@ -151,6 +154,7 @@ function Donation() {
       </div>
     </Layout>
   )
+
 }
 
 export default Donation

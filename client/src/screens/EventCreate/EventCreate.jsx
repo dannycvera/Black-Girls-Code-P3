@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "./EventCreate.css"
 import Layout from "../../components/shared/Layout/Layout"
+import Button from "../../components/shared/Button/Button"
 import { Redirect } from "react-router-dom"
 import { createEvent } from "../../services/events"
 import Contributors from "../../components/shared/Contributors/Contributors"
@@ -126,9 +127,7 @@ const EventCreate = (props) => {
 						/>
 					</label>
 
-					<button type="submit" className="submit-button">
-						SUBMIT
-					</button>
+					<Button content="SUBMIT" sizeClassName="medium-submit" />
 				</form>
 			</div>
 		</Layout>
