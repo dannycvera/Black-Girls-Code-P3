@@ -5,6 +5,20 @@
   font-family: "Roboto", sans-serif;
 }
 
+.donation-content img {
+  object-fit: contain;
+  object-fit: cover;
+}
+.support {
+  position: relative;
+  bottom: 130px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
 .donation-pic {
   width: 948px;
   height: 341px;
