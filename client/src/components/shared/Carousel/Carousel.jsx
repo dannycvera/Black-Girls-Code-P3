@@ -80,14 +80,6 @@ function Carousel() {
             alt={slide.title}
             src={require(`../../../img/${slide.imgURL}`)}
           />
-          // <div
-          //   key={slide.title}
-          //   className="slide"
-          //   style={{
-          //     backgroundColor: slide.color,
-          //     //backgroundImage: require(`../../../img/${slide.imgURL}`),
-          //   }}
-          //></div>
         ))}
       </div>
     </div>

@@ -14,24 +14,12 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path="/" exact>
-          <Home />
-        </Route>
-        <Route path="/whatwedo">
-          <AboutUs />
-        </Route>
-        <Route path="/donations">
-          <Donation />
-        </Route>
-        <Route path="/whereyourmoneygoes">
-          <WhereYourMoneyGoes />
-        </Route>
-        <Route path="/newevent">
-          <EventCreate />
-        </Route>
-        <Route path="/event/edit/:id" exact>
-          <EventEdit />
-        </Route>
+        <Route exact path="/" component={Home} />
+        <Route path="/whatwedo" component={AboutUs} />
+        <Route path="/donations" component={Donation} />
+        <Route path="/whereyourmoneygoes" component={WhereYourMoneyGoes} />
+        <Route path="/newevent" component={EventCreate} />
+        <Route exact path="/event/edit/:id" component={EventEdit} />
       </Switch>
     </div>
   );

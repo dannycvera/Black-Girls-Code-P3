@@ -26,7 +26,6 @@ a:visited {
   justify-content: flex-start;
   width: 950px;
   height: 55px;
-  /* line-height: 30px; */
   background-color: black;
   font-size: 11px;
   padding: 0 10px;
@@ -38,7 +37,6 @@ a:visited {
   white-space: nowrap;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
-  /* border: 1px solid red; */
   user-select: none;
 }
 
@@ -63,7 +61,6 @@ a:visited {
 
 .link:hover,
 .drop-down > li:hover {
-  /* background-color: #f90c86; */
   background: linear-gradient(#ff7cab, #f90c86);
   border-radius: 5px;
 }
@@ -79,10 +76,3 @@ a:visited {
   white-space: nowrap;
   user-select: none;
 }
-
-/* ul {
-  list-style: none;
-  text-decoration: none;
-  padding: 0 6px;
-  position: absolute;
-} */

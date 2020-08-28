@@ -29,13 +29,15 @@ const EventEdit = (props) => {
     };
     fetchEvent();
   }, [id]);
+
   useEffect(() => {
     try {
       updImagePath(require(`../../img/${event.imgURL}`));
     } catch (err) {
       updImagePath(require("../../img/noimg.jpg"));
     }
-  }, [event]);
+  }, [event.imgURL]);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setEvent({
