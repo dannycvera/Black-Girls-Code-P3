@@ -68,3 +68,4 @@ const WhereYourMoneyGoes = (props) => {
 	)
 }
 export default WhereYourMoneyGoes
+

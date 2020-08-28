@@ -1,81 +1,82 @@
 .html {
-	width: 950px;
+  width: 950px;
 }
 
 .title-wymg {
-	border-bottom: solid grey;
-	width: 950px;
-	padding: 20px 0 20px 0;
-	margin: 0 auto;
-	color: #ff0072;
-	font-family: "Roboto", "sans-serif";
-	font-weight: 700;
+  border-bottom: solid grey;
+  width: 950px;
+  padding: 20px 0 20px 0;
+  margin: 0 auto;
+  color: #f90c86;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 700;
 }
 
 .events-container {
-	width: 950px;
-	margin: 0 auto;
-	max-height: 770px;
-	overflow-y: scroll;
+  width: 950px;
+  margin: 0 auto;
+  max-height: 770px;
+  overflow-y: scroll;
 }
 
 .events-container::-webkit-scrollbar {
-	display: block;
-	width: 8px;
+  display: block;
+  width: 8px;
 }
 
 .events-container::-webkit-scrollbar-thumb {
-	border-radius: 5px;
-	border: 1px solid #000000;
-	background-color: #ff7cab;
-	height: 5px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background-color: #ff7cab;
+  height: 5px;
 }
 
 .main-event {
-	display: flex;
-	margin-top: 30px;
+  display: flex;
+  margin-top: 30px;
 }
 
 .main-event img {
-	height: 160px;
-	width: 270px;
-	padding-left: 20px;
-	object-fit: cover;
+  height: 160px;
+  width: 270px;
+  padding-left: 20px;
+  object-fit: cover;
 }
 
 .event-content {
-	width: 100%;
-	margin-right: 10px;
+  width: 100%;
+  margin-right: 10px;
 }
 
 .event-content h3,
 h4,
 p {
-	margin: 0 70px 0px 75px;
-	text-align: left;
-	font-family: "Roboto", "sans-serif";
-	color: white;
+  margin: 0 70px 0px 75px;
+  text-align: left;
+  font-family: "Roboto", "sans-serif";
+  color: white;
 }
 
 .event-content p {
-	font-family: "Montserrat", "sans-serif";
+  font-family: "Montserrat", "sans-serif";
 }
 
 .event-content h3 {
-	font-family: "Roboto", "sans-serif";
-	font-size: 22px;
+  font-family: "Roboto", "sans-serif";
+  font-size: 22px;
 }
 
 .event-content h3 {
-	color: #ff7cab;
-	margin-top: 0;
+  color: #ff7cab;
+  margin-top: 0;
 }
+
 
 .title-button {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .quote {
-	margin-top: 5px;
+  margin-top: 5px;
 }

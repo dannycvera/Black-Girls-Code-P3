@@ -1,6 +1,5 @@
 @media screen and (max-width: 500px) {
   .carousel {
-
     width: 100vw;
     height: 200px;
 
@@ -16,7 +15,6 @@
     display: flex;
   }
   .slide {
-
     width: 100vw;
     height: 200px;
 

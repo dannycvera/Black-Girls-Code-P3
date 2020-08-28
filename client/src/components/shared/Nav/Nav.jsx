@@ -14,11 +14,9 @@ function Nav() {
           if (visible === "show") {
             updVisible("");
             updCross("");
-            // console.log("do not show");
           } else {
             updVisible("show");
             updCross("cross");
-            // console.log("show");
           }
         }}
       >
@@ -33,9 +31,8 @@ function Nav() {
               HOME
             </NavLink>
             <div className="drop-down-list">
-              {/* <NavLink className="link" to="/whereyourmoneygoes"> */}
               <div className="link">ABOUT BGC</div>
-              {/* </NavLink> */}
+
               <ul className="drop-down">
                 <li>
                   <NavLink to="/whatwedo">What We Do</NavLink>
@@ -48,9 +45,7 @@ function Nav() {
               </ul>
             </div>
             <div className="drop-down-list">
-              {/* <NavLink className="link" to="/"> */}
               <div className="link">PROGRAM/EVENTS</div>
-              {/* </NavLink> */}
               <ul className="drop-down">
                 <li>
                   <NavLink to="/">BCG Hackathons</NavLink>
@@ -58,9 +53,7 @@ function Nav() {
               </ul>
             </div>
             <div className="drop-down-list">
-              {/* <NavLink className="link" to="/"> */}
               <div className="link">PRESS</div>
-              {/* </NavLink> */}
               <ul className="drop-down">
                 <li>
                   <NavLink to="/">Press Only</NavLink>
@@ -68,9 +61,7 @@ function Nav() {
               </ul>
             </div>
             <div className="drop-down-list">
-              {/* <NavLink className="link" to="/"> */}
               <div className="link">JOIN US</div>
-              {/* </NavLink> */}
               <ul className="drop-down">
                 <li>
                   <NavLink to="/">Career Openings</NavLink>
@@ -84,9 +75,7 @@ function Nav() {
               PARENTS
             </NavLink>
             <div className="drop-down-list">
-              {/* <NavLink className="link" to="/"> */}
               <div className="link">CONTACT US</div>
-              {/* </NavLink> */}
               <ul className="drop-down">
                 <li>
                   <NavLink to="/">Mailing List</NavLink>

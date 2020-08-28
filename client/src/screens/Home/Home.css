@@ -1,203 +1,205 @@
 body {
-	background-color: #202020;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
+  background-color: #202020;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .home {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .home-title {
-	color: #f90c86;
-	border: none;
-	margin: 35px 0 0 0;
-	padding-bottom: 5px;
-	font-size: 45px;
+  color: #f90c86;
+  border: none;
+  margin: 35px 0 0 0;
+  padding-bottom: 5px;
+  font-size: 45px;
 }
 
 .home-subtitle {
-	margin-top: 0px;
-	letter-spacing: 1.5px;
-	font-size: 35px;
-	font-family: "Montserrat", sans-serif;
+  margin-top: 0px;
+  letter-spacing: 1.5px;
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
 }
 
 span {
-	color: #ff7cab;
-	font-weight: bold;
+  color: #ff7cab;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 
 .vision {
-	width: 950px;
-	padding: 20px 40px;
-	line-height: 24px;
-	font-size: 16px;
+  width: 950px;
+  padding: 20px 40px;
+  line-height: 24px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .students {
-	width: 950px;
-	height: 463px;
-	object-fit: cover;
-	border-top: 1.5px solid grey;
-	padding-top: 25px;
+  width: 950px;
+  height: 463px;
+  object-fit: cover;
+  border-top: 1.5px solid grey;
+  padding-top: 25px;
 }
 
 .student-text {
-	width: 950px;
-	margin: 10px 0px 10px 5px;
-	padding: 20px 40px;
-	line-height: 24px;
-	font-size: 16px;
-	font-family: "Montserrat", sans-serif;
+  width: 950px;
+  margin: 10px 0px 10px 5px;
+  padding: 20px 40px;
+  line-height: 24px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .students-div {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	width: 950px;
-	border-bottom: 1.5px solid grey;
-	margin: 10px 0px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 950px;
+  border-bottom: 1.5px solid grey;
+  margin: 10px 0px 10px 10px;
 }
 
 .float-title {
-	font-size: 48px;
-	color: #f90c86;
-	border: none;
+  font-size: 48px;
+  color: #f90c86;
+  border: none;
 }
 .floating-div {
-	margin: 10px 0 30px;
-	display: flex;
+  margin: 10px 0 30px;
+  display: flex;
 }
 
 .blackboard-img {
-	height: 570px;
-	width: 490px;
-	object-fit: cover;
-	padding-left: 10px;
+  height: 570px;
+  width: 490px;
+  object-fit: cover;
+  padding-left: 10px;
 }
 
 .break-the-cycle {
-	height: 260px;
-	width: 750px;
+  height: 260px;
+  width: 750px;
 }
 
 .title {
-	color: #ff7cab;
-	font-weight: bold;
-	font-size: 22px;
-	margin: 0px;
-	font-family: "Roboto", sans-serif;
+  color: #ff7cab;
+  font-weight: bold;
+  font-size: 22px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
 }
 
 .right-text {
-	font-size: 13px;
-	text-align: left;
-	margin: -5px 0 0 20px;
-	height: 550px;
-	width: 450px;
-	line-height: 22px;
-	font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  text-align: left;
+  margin: -5px 0 0 20px;
+  height: 550px;
+  width: 450px;
+  line-height: 22px;
+  font-family: "Roboto", sans-serif;
 }
 
 .description {
-	margin: 0px 0px 18px 0px;
-	font-size: 16px;
-	font-family: "Montserrat", sans-serif;
+  margin: 0px 0px 18px 0px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .left-content {
-	display: flex;
-	flex-direction: column;
-	align-content: left;
-	border-right: 1.5px solid grey;
-	width: 510px;
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  border-right: 1.5px solid grey;
+  width: 510px;
 }
 
 .office-text {
-	text-align: left;
-	margin: 30px 10px 10px 10px;
-	font-size: 33px;
-	line-height: 39px;
-	font-family: "Roboto", sans-serif;
+  text-align: left;
+  margin: 30px 10px 10px 10px;
+  font-size: 33px;
+  line-height: 39px;
+  font-family: "Roboto", sans-serif;
 }
 
 .bottom-div {
-	display: flex;
+  display: flex;
 }
 
 .border-div {
-	width: 1010px;
-	border-top: 1.5px solid grey;
-	margin-left: 55px;
+  width: 1010px;
+  border-top: 1.5px solid grey;
+  margin-left: 55px;
 }
 
 .boys {
-	height: 350px;
-	width: 465px;
-	margin: 30px 25px 0 0;
+  height: 350px;
+  width: 465px;
+  margin: 30px 25px 0 0;
 }
 
 .pink-text {
-	color: #ff7cab;
-	font-weight: bold;
+  color: #ff7cab;
+  font-weight: bold;
 }
 
 .mailing-list-container {
-	background-color: white;
-	width: 436px;
-	height: 226px;
-	margin-top: 110px;
+  background-color: white;
+  width: 436px;
+  height: 226px;
+  margin-top: 110px;
 }
 
 .mailing-list-text {
-	font-size: 23px;
-	color: #202020;
-	font-weight: normal;
-	padding-top: 25px;
+  font-size: 23px;
+  color: #202020;
+  font-weight: normal;
+  padding-top: 25px;
 }
 
 .subscribe-button {
-	width: 125px;
-	height: 45px;
-	border-radius: 4px;
-	box-shadow: 0 4px 4px 0 rgb(196 196 196);
-	color: white;
-	border: none;
-	background-image: linear-gradient(to top, #ff0072, #ff7cab);
-	font-size: 17px;
-	font-family: "Roboto", sans-serif;
+  width: 125px;
+  height: 45px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgb(196 196 196);
+  color: white;
+  border: none;
+  background-image: linear-gradient(to top, #ff0072, #ff7cab);
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
 }
 
 .subscribe-button:focus {
-	outline: none !important;
+  outline: none !important;
 }
 
 .email {
-	background-color: rgb(196 196 196);
-	width: 388px;
-	height: 42px;
-	font-size: 22px;
-	text-align: center;
-	border: none;
-	margin-top: 5px;
-	margin-bottom: 28px;
-	font-family: "Montserrat", sans-serif;
+  background-color: rgb(196 196 196);
+  width: 388px;
+  height: 42px;
+  font-size: 22px;
+  text-align: center;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 28px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .bottom-left-text {
-	font-size: 24px;
-	padding-left: 5px;
-	text-align: center;
-	margin: 9px 77px 10px 50px;
-	font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  padding-left: 5px;
+  text-align: center;
+  margin: 9px 77px 10px 50px;
+  font-family: "Roboto", sans-serif;
 }
