@@ -68,15 +68,7 @@ span {
 	border-bottom: 1.5px solid grey;
 	margin: 10px 0px 10px 10px;
 }
-.sign-up-button {
-	width: 143px;
-	height: 54px;
-	background-image: linear-gradient(to top, #ff0072, #ff7cab);
-	color: white;
-	border: none;
-	font-size: 22px;
-	margin-bottom: 30px;
-}
+
 .float-title {
 	font-size: 48px;
 	color: #f90c86;

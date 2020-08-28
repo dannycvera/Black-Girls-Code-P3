@@ -2,6 +2,7 @@ import React from "react"
 import "./Home.css"
 import Layout from "../../components/shared/Layout/Layout"
 import Carousel from "../../components/shared/Carousel/Carousel"
+import Button from "../../components/shared/Button/Button"
 import "./HomeMedia.css"
 
 function Home() {
@@ -44,9 +45,7 @@ function Home() {
 						href={"https://www.blackgirlscode.com/programsevents.html"}
 						target="_blank"
 					>
-						<button className="sign-up-button" target="_blank">
-							SIGN UP
-						</button>
+						<Button content="SIGN UP" sizeClassName="large-signup" />
 					</a>
 				</div>
 				<h1 className="float-title">Join Our Team!</h1>
@@ -219,7 +218,7 @@ function Home() {
 								className="email"
 								placeholder="email address"
 							></input>
-							<button className="subscribe-button">SUBSCRIBE</button>
+							<Button content="SUBSCRIBE" sizeClassName="large-subscribe" />
 						</div>
 					</div>
 				</div>

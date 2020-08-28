@@ -1,17 +1,13 @@
 .bounce {
-	width: 81px;
-	height: 30px;
 	border-radius: 3px;
 	color: white;
+	outline: none;
 	border: none;
 	background-image: linear-gradient(to top, #ff0072, #ff7cab);
-	font-size: 16px;
 	text-decoration: none;
 	font-family: "Roboto", sans-serif;
 	text-transform: uppercase;
-	padding: 20px 50px;
 	transition-duration: 0.2s;
-	display: inline-block;
 	perspective: 1000px;
 	transform-origin: center bottom 0px;
 	transform: matrix(1, 0, 0, 1, 0, 0);
@@ -19,4 +15,72 @@
 
 .btnDown {
 	transform: matrix(0.95, 0, 0, 0.95, 0, 0);
+}
+
+.bounce.large-donate {
+	font-size: 30px;
+	height: 75px;
+	width: 200px;
+	margin: 40px auto 50px auto;
+}
+
+.bounce.large-submit {
+	font-size: 32px;
+	height: 70px;
+	width: 220px;
+}
+
+.bounce.large-signup {
+	font-size: 22px;
+	height: 54px;
+	width: 143px;
+	margin-bottom: 30px;
+}
+
+.bounce.large-subscribe {
+	font-size: 17px;
+	height: 45px;
+	width: 125px;
+	box-shadow: 0 4px 4px 0 rgb(196 196 196);
+}
+
+.bounce.medium-add {
+	font-size: 16px;
+	height: 30px;
+	width: 120px;
+	margin: 50px 0 50px 0;
+}
+
+.bounce.medium-delete {
+	font-size: 15px;
+	height: 35px;
+	width: 90px;
+	margin-left: 10px;
+}
+
+.bounce.medium-edit {
+	font-size: 15px;
+	height: 35px;
+	width: 90px;
+}
+
+.bounce.medium-submit {
+	font-size: 15px;
+	height: 35px;
+	width: 90px;
+	margin: 60px 0 60px 300px;
+}
+
+.bounce.small-edit {
+	font-size: 12px;
+	height: 27px;
+	width: 81px;
+	margin-right: 8px;
+}
+
+.bounce.small-donate {
+	font-size: 12px;
+	height: 30px;
+	width: 81px;
+	margin-top: 10px;
 }

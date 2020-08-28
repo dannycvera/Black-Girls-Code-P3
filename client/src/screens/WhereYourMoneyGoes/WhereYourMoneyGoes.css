@@ -31,19 +31,6 @@
 	height: 5px;
 }
 
-.edit-button {
-	width: 81px;
-	height: 27px;
-	right: 0;
-	border-radius: 2px;
-	color: white;
-	border: none;
-	margin-right: 8px;
-	background-image: linear-gradient(to top, #ff0072, #ff7cab);
-	font-size: 12px;
-	font-family: "Roboto", sans-serif;
-}
-
 .main-event {
 	display: flex;
 	margin-top: 30px;
@@ -82,18 +69,6 @@ p {
 .event-content h3 {
 	color: #ff7cab;
 	margin-top: 0;
-}
-
-.add-button {
-	width: 120px;
-	height: 30px;
-	border-radius: 2px;
-	color: white;
-	border: none;
-	background-image: linear-gradient(to top, #ff0072, #ff7cab);
-	font-size: 16px;
-	margin: 50px 0 50px 0;
-	font-family: "Roboto", "sans-serif";
 }
 
 .title-button {

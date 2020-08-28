@@ -7,7 +7,7 @@
 .donation-pic {
 	width: 948px;
 	height: 341px;
-	object-fit: fill;
+	object-fit: cover;
 	margin-bottom: 60px;
 }
 

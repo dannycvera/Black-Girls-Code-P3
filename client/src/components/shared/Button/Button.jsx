@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import "./Button.css"
 
 class Button extends React.Component {
@@ -13,14 +13,26 @@ class Button extends React.Component {
 		this.setState((prevState) => ({ isDown: !prevState.isDown }))
 	}
 
+	getClassName() {
+		const className = ["bounce", this.props.sizeClassName]
+
+		if (this.state.isDown) {
+			className.push("btnDown")
+		}
+
+		return className.join(" ")
+	}
+
 	render() {
 		return (
 			<button
-				className={this.State.isDown ? "btnDown bounce" : "bounce"}
-				onMouseDown={(e) => this.toggleClass(e)}
-				onMouseUp={(e) => this.toggleClass(e)}
+				className={this.getClassName()}
+				onMouseDown={() => this.toggleClass()}
+				onMouseUp={() => this.toggleClass()}
 				{...this.props}
-			/>
+			>
+				{this.props.content}
+			</button>
 		)
 	}
 }

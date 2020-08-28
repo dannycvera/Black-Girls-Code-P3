@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "./Donation.css"
 import Layout from "../../components/shared/Layout/Layout"
+import Button from "../../components/shared/Button/Button"
 import donationGirls from "../../img/donation-page.png"
 
 function Donation() {
@@ -94,7 +95,7 @@ function Donation() {
 								</div>
 							</div>
 						</form>
-						<button className="submit-btn">SUBMIT</button>
+						<Button content="SUBMIT" sizeClassName="large-submit" />
 					</div>
 					<div className="charity-container">
 						<p className="charity">
