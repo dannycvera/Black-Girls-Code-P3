@@ -9,9 +9,9 @@
     display: block;
   }
   .search-container {
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    padding-left: 0;
+    padding-left: 12vw;
   }
   .search-div {
   }

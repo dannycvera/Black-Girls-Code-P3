@@ -12,6 +12,7 @@
     background-color: #202020;
     order: 2;
     width: 70%;
+    padding-bottom: 20px;
   }
   .layout .nav {
     order: 1;
