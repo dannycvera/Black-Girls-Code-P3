@@ -203,3 +203,27 @@ input[type="checkbox"]:focus {
 .company-name::placeholder {
   padding-left: 10px;
 }
+
+.donation-wall p {
+  background: white;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin: 0px 0px 40px 0px;
+  line-height: 60px;
+  text-indent: 30px;
+}
+
+.donor-text {
+  text-indent: 8px;
+}
+
+/* .kim-subtext {
+  color: black;
+  font-size: 14px;
+  padding: 0;
+  margin-left: 30px;
+  margin-bottom: 0;
+  font-weight: normal;
+  line-height: 3px;
+} */

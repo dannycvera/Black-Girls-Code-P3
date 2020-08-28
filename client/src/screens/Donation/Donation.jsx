@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import "./Donation.css";
-import Layout from "../../components/shared/Layout/Layout";
-import donationGirls from "../../img/donation-page-large.jpg";
+import React, { useState } from "react"
+import "./Donation.css"
+import Layout from "../../components/shared/Layout/Layout"
+import donationGirls from "../../img/donation-page-large.jpg"
 
 function Donation() {
   return (
@@ -106,11 +106,51 @@ function Donation() {
           </div>
           <div className="donor-wall-container">
             <h1 className="donor-text">Donor Wall</h1>
+            <div className="donation-wall">
+              <p>
+                {" "}
+                Susan Wright | <strong>$250</strong>{" "}
+              </p>
+              <p className="kim">
+                {" "}
+                Kim | <strong>$51.70</strong>
+                {/* <br />
+                <span className="kim-subtext">
+                  Thank you for your incredible work. This is the first of many
+                  donations. I am a black girl and I wish this organization had
+                  been around when I was a kid.
+                  <br />
+                  Forever grateful for your organization and for the young girls
+                  your are empowering. Changing the way the world sees us
+                  forever.
+                </span> */}
+              </p>
+              <p>
+                {" "}
+                Redstamp Agency | <strong>$7.96</strong>
+              </p>
+              <p>
+                {" "}
+                RevCult | <strong>$103.08</strong>
+              </p>
+              <p>
+                {" "}
+                Rhonda | <strong>$103.08</strong>
+              </p>
+              <p>
+                {" "}
+                Adam | <strong>$26</strong>{" "}
+              </p>
+              <p>
+                {" "}
+                Optimal Workshop | <strong>$1,655 </strong>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </Layout>
-  );
+  )
 }
 
-export default Donation;
+export default Donation
