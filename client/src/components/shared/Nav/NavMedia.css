@@ -1,12 +1,4 @@
 @media screen and (max-width: 500px) {
-  /* .nav {
-    display: none;
-    width: 100vw;
-  } */
-  /* nav {
-    display: none;
-  } */
-
   .links {
     position: absolute;
     display: none;
@@ -17,7 +9,7 @@
     justify-content: center;
     width: auto;
     height: auto;
-    /* line-height: 30px; */
+
     background-color: black;
     font-size: 11px;
     padding: 10px 10px;
@@ -34,7 +26,6 @@
     font-family: "Roboto", sans-serif;
     text-align: left;
     user-select: none;
-    /* border: 1px solid red; */
   }
   .drop-down-list {
     margin: 0 0 0 0;
@@ -70,8 +61,7 @@
     padding: 2px 5px 2px 5px;
     cursor: pointer;
   }
-  /* .nav-icon:after,
-  .nav-icon:before, */
+
   .cross div,
   .nav-icon div {
     display: block;
@@ -82,15 +72,15 @@
     margin: 5px 0;
     transition: all 0.2s ease-in-out;
   }
-  /* .nav-icon:hover:before { */
+
   .cross > :first-child {
-    transform: translateY(12px) rotate(135deg);
+    transform: translateY(7px) rotate(50deg);
   }
-  /* .nav-icon:hover:after { */
+
   .cross > :last-child {
-    transform: translateY(-12px) rotate(-135deg);
+    transform: translateY(-7px) rotate(-50deg);
   }
-  /* .nav-icon:hover div { */
+
   .cross > :nth-child(2) {
     transform: scale(0);
   }
