@@ -25,6 +25,7 @@ const Event = new Schema(
     funds: { type: Integer, required: true },
     content: { type: String, required: true },
     quote: { type: String, required: true },
+    author: { type: String, required: true },
     age: { type: Integer, required: true }
   },
   { timestamps: true }
@@ -43,5 +44,5 @@ BGC Screens:
 
 BGC Screens:
 - Mobile Layout with CSS
-- Donation Page 1, 2, 3
+- Donation screen
 - Limited CRUD functionality in Donor Wall component
